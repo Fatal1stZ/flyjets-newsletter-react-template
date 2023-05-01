@@ -1,0 +1,97 @@
+[
+  {
+    "directions": [
+      {
+        "flights": [
+          {
+            "aircraft": "Legacy 600 (Heavy)",
+            "arrival": "KPBI",
+            "numberOfSeatsAvailable": 12,
+            "numberOfSeatsReserved": 10,
+            "dateRange": {
+              "end": "2023-05-06",
+              "start": "2023-05-02"
+            },
+            "departure": "KTEB",
+            "price": {
+              "full": 19000,
+              "half": 9500,
+              "share": 1900
+            }
+          },
+          {
+            "aircraft": "Hawker 800 XP (Midsize)",
+            "arrival": "KAPF",
+            "numberOfSeatsAvailable": 8,
+            "numberOfSeatsReserved": 5,
+            "dateRange": {
+              "end": "2023-05-07",
+              "start": "2023-05-06"
+            },
+            "departure": "KTEB",
+            "price": {
+              "full": 16900,
+              "half": 8450,
+              "share": 3380
+            }
+          }
+        ],
+        "from": "New York",
+        "to": "Florida"
+      },
+      {
+        "flights": [
+          {
+            "aircraft": "Legacy 600 (Heavy)",
+            "arrival": "KVNY",
+            "numberOfSeatsAvailable": 12,
+            "numberOfSeatsReserved": 10,
+            "dateRange": {
+              "end": "2023-05-05",
+              "start": "2023-05-03"
+            },
+            "departure": "KTEB",
+            "price": {
+              "full": 35900,
+              "half": 17950,
+              "share": 3590
+            }
+          }
+        ],
+        "from": "New York",
+        "to": "California"
+      }
+    ],
+    "state": "New York"
+  },
+  {
+    "state": "Florida"
+  },
+  {
+    "state": "California"
+  },
+  {
+    "state": "The Bahamas"
+  },
+  {
+    "state": "Illinois"
+  },
+  {
+    "state": "Indiana"
+  },
+  {
+    "state": "Michigan"
+  },
+  {
+    "state": "New Hampshire"
+  },
+  {
+    "state": "Nevada"
+  },
+  {
+    "state": "Ohio"
+  },
+  {
+    "state": "Wisconsin"
+  }
+]

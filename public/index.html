@@ -1,43 +1,410 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
+<!DOCTYPE html
+        PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <title>FLYJETS Featured Flights (Empty Legs):  week of May 1, 2023 and beyond</title>
+    <meta content="only" name="color-scheme"/>
+    <meta content="only" name="supported-color-schemes"/>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Rozha+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap"
+          rel="stylesheet">
 
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>React App</title>
-  </head>
-  <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
+    <style>
+        .body, .darkmode, .darkmode div { /* With class body on the body tag, and all elements represented here that have a background color */
+            background-image: linear-gradient(#ffffff, #ffffff) !important;
+        }
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
+        .darkmode p { /* Add other selectors for other text elements */
+            -webkit-text-fill-color: #000000 !important;
+        }
 
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
-  </body>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap');
+
+        [style*="Roboto Condensed"] {
+            font-family: 'Roboto Condensed', Arial, sans-serif;
+        }
+
+        body {
+            -webkit-text-size-adjust: 100%;
+            -ms-text-size-adjust: 100%;
+            font-family: 'Roboto Condensed', Arial, sans-serif;
+            font-size: 14px;
+            margin: 0;
+            padding: 0;
+        }
+
+        .root {
+            max-width: 600px;
+            margin: auto;
+        }
+
+        .header {
+            height: 100px;
+            padding: 0 25px;
+            width: 100%;
+            margin-bottom: 20px;
+            font-size: 14px;
+            border-radius: 10px;
+            /*display: flex;*/
+            /*justify-content: space-between;*/
+            /*align-items: center;*/
+        }
+
+        .header td, .featured-flights td, .bottom td, .directions td, .buttons td, .socials td, .bottom td, .contacts td, .footer td {
+            text-align: center;
+            vertical-align: middle;
+        }
+
+        .featured-flights {
+            margin-bottom: 20px;
+        }
+
+        .featured-flights, .bottom, .contacts, .footer {
+            width: 100%;
+            /*display: flex;*/
+            /*flex-direction: column;*/
+            /*align-items: center;*/
+        }
+
+        .directions {
+            margin-bottom: 20px;
+            /*width: 100%;*/
+            /*display: flex;*/
+            /*gap: 5px;*/
+            /*justify-content: center;*/
+        }
+
+        .directions a {
+            color: #000000;
+        }
+
+        .direction {
+            /*display: flex;*/
+            /*gap: 15px;*/
+            display: inline-block;
+            margin-right: 5px;
+            left: 5px;
+            margin-bottom: 5px;
+            padding: 10px 10px;
+            font-size: 14px;
+        }
+
+        .direction-header {
+            width: 100%;
+            /*display: flex;*/
+            padding: 15px 15px;
+            font-size: 14px;
+            border-radius: 10px;
+            /*align-items: center;*/
+            /*justify-content: space-between;*/
+        }
+
+        .state-header {
+            padding: 15px 15px;
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+
+        .path {
+            width: 100%;
+            /*display: flex;*/
+            /*align-items: center;*/
+        }
+
+        .buttons, .contacts {
+            margin-bottom: 45px;
+            /*display: flex;*/
+            /*justify-content: center;*/
+        }
+
+        .buttons.last {
+            margin-bottom: 90px;
+        }
+
+        .socials {
+            margin-bottom: 20px;
+            /*display: flex;*/
+            /*justify-content: center;*/
+            /*gap: 25px*/
+        }
+
+        .bottom {
+            margin-bottom: 15px;
+        }
+
+        .footer {
+            /*display: flex;*/
+            /*gap: 12px;*/
+            /*justify-items: center;*/
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .main-table thead {
+            height: 44px;
+        }
+
+        .main-table, .main-table-mobile {
+            width: 100%;
+        }
+
+        .main-table td, .main-table-mobile td {
+            font-size: 14px;
+        }
+
+        .main-table td {
+            border-bottom: 1px solid #DEDEDE;
+            padding: 10px;
+        }
+
+        .main-table-mobile td {
+            padding: 5px;
+        }
+
+        .main-table td img, .main-table-mobile td img {
+            width: 66px;
+            height: 50px;
+            object-fit: cover;
+        }
+
+        .withImage {
+            width: 62px;
+        }
+
+        .bordered {
+            border-bottom: 1px solid #DEDEDE;
+        }
+
+        .img-logo {
+            width: 100px;
+            height: 50px;
+        }
+
+        .dot {
+            height: 11px;
+            width: 11px;
+            border-radius: 50%;
+            display: inline-block;
+            border-style: solid;
+            border-width: 1px;
+        }
+
+        .button {
+            display: inline-block;
+            text-decoration: none;
+            border: 0;
+            padding: 12px 37px;
+            border-radius: 10px;
+        }
+
+        .flex {
+            /*flex: auto;*/
+        }
+
+        .line-dotted {
+            border: 1px dashed #545454;
+        }
+
+        .ph-25 {
+            padding-left: 25px;
+            padding-right: 25px;
+        }
+
+        .mb-15 {
+            margin-bottom: 15px;
+        }
+
+        .mb-20 {
+            margin-bottom: 20px;
+        }
+
+        .mb-25 {
+            margin-bottom: 25px;
+        }
+
+        .mb-45 {
+            margin-bottom: 45px;
+        }
+
+        .mb-90 {
+            margin-bottom: 90px;
+        }
+
+        .border-dotted {
+            border-style: dashed;
+            border-width: 1px;
+        }
+
+        .border-color-white {
+            border-color: #FFFFFF;
+        }
+
+        .border-color-gray {
+            border-color: #545454;
+        }
+
+        .bg-color-white {
+            background: #FFFFFF;
+        }
+
+        .bg-color-black {
+            background: #000000;
+        }
+
+        .bg-color-gray {
+            background: #F4F4F4;
+        }
+
+        .bg-color-green {
+            background: #00C55A;
+        }
+
+        .color-white {
+            color: #FFFFFF;
+        }
+
+        .color-gray {
+            color: #7E7E7E;
+        }
+
+        .color-black {
+            color: #000000;
+        }
+
+        .fs-14 {
+            font-size: 14px;
+        }
+
+        .fs-16 {
+            font-size: 16px;
+        }
+
+        .fs-18 {
+            font-size: 18px;
+        }
+
+        .fs-22 {
+            font-size: 22px;
+        }
+
+        .fs-24 {
+            font-size: 24px;
+            line-height: 40px;
+        }
+
+        .fs-27 {
+            font-size: 27px;
+            line-height: 44px;
+        }
+
+        .fw-300 {
+            font-weight: 300;
+        }
+
+        .fw-700 {
+            font-weight: 700;
+        }
+
+        .ff-roboto {
+            font-family: 'Roboto';
+        }
+
+        .ff-roboto-condensed {
+            font-family: 'Roboto Condensed';
+        }
+
+        .uppercase {
+            text-transform: uppercase;
+        }
+
+        .d-none {
+            display: none;
+        }
+
+        .centered {
+            display: table;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 0 10px;
+        }
+
+        .right {
+            text-align: right;
+        }
+
+        .noWrap {
+            white-space: nowrap;
+        }
+
+        .va-m {
+            vertical-align: middle;
+        }
+
+        /* Mobile */
+        @media screen and (max-width: 620px) {
+            .main-table {
+                /*display: none;*/
+            }
+
+            .main-table td {
+                font-size: 12px;
+            }
+
+            .main-table .non-mobile {
+                display: none;
+            }
+
+
+            .main-table-mobile {
+                display: table;
+            }
+
+            .header {
+                height: 80px;
+                padding: 0 15px;
+                margin-bottom: 30px;
+                font-size: 12px;
+            }
+
+            .featured-flights {
+                margin-bottom: 12px;
+            }
+
+            .directions {
+                margin-bottom: 15px;
+            }
+
+            .direction-header {
+                font-size: 14px;
+            }
+
+            .buttons {
+                margin-bottom: 30px;
+            }
+
+            .buttons.last {
+                margin-bottom: 55px;
+            }
+
+            .fs-24 {
+                font-size: 16px;
+                line-height: 16px;
+            }
+
+            .fs-27 {
+                font-size: 20px;
+                line-height: 26px;
+            }
+        }
+    </style>
+</head>
+<body class="bg-color-white">
+<div id="root" class="root"></div>
+
+</body>
+
 </html>
