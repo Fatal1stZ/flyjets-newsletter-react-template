@@ -2,18 +2,18 @@
         PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
     <title>FLYJETS Featured Flights (Empty Legs):  week of May 1, 2023 and beyond</title>
     <meta content="only" name="color-scheme"/>
     <meta content="only" name="supported-color-schemes"/>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Rozha+One&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap"
           rel="stylesheet">
 
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap');
+
         .body, .darkmode, .darkmode div { /* With class body on the body tag, and all elements represented here that have a background color */
             background-image: linear-gradient(#ffffff, #ffffff) !important;
         }
@@ -21,8 +21,6 @@
         .darkmode p { /* Add other selectors for other text elements */
             -webkit-text-fill-color: #000000 !important;
         }
-
-        @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap');
 
         [style*="Roboto Condensed"] {
             font-family: 'Roboto Condensed', Arial, sans-serif;
@@ -40,6 +38,7 @@
         .root {
             max-width: 600px;
             margin: auto;
+            padding: 0 5px;
         }
 
         .header {
@@ -80,6 +79,7 @@
 
         .directions a {
             color: #000000;
+            text-decoration: none;
         }
 
         .direction {
@@ -89,7 +89,7 @@
             margin-right: 5px;
             left: 5px;
             margin-bottom: 5px;
-            padding: 10px 10px;
+            padding: 8px 8px;
             font-size: 14px;
         }
 
@@ -106,7 +106,6 @@
         .state-header {
             padding: 15px 15px;
             font-size: 20px;
-            margin-bottom: 10px;
         }
 
         .path {
@@ -344,18 +343,30 @@
             vertical-align: middle;
         }
 
+        .mobile {
+            /*display: none;*/
+        }
+
+        .non-mobile {
+            /*display: block;*/
+        }
+
         /* Mobile */
-        @media screen and (max-width: 620px) {
+        @media screen and (max-width: 620px){
             .main-table {
+                /*display: none;*/
+            }
+
+            .mobile {
+                /*display: block;*/
+            }
+
+            .non-mobile {
                 /*display: none;*/
             }
 
             .main-table td {
                 font-size: 12px;
-            }
-
-            .main-table .non-mobile {
-                display: none;
             }
 
 

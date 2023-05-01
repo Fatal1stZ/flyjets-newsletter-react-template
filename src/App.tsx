@@ -14,14 +14,6 @@ const formatter = new Intl.NumberFormat('en-US', {
   maximumFractionDigits: 0, // (causes 2500.99 to be printed as $2,501)
 });
 
-const styles: {
-  [key in string]: CSSProperties
-} = {
-  'bg-color-black': {
-    background: '#000'
-  }
-}
-
 function App() {
   return (<>
     <table className="header bg-color-black">
@@ -47,6 +39,11 @@ function App() {
       <tr>
         <td className="fs-22 fw-300 uppercase">as of May 1, 2023</td>
       </tr>
+      <tr>
+        <td className={'fw-300'}>Listed below are upcoming empty leg opportunities for the week of May 1st grouped by
+          state of origin; email us or sign in to the app to book. Happy flying!
+        </td>
+      </tr>
     </table>
     <div className="centered">
       <div className="directions">
@@ -54,7 +51,8 @@ function App() {
           <table className="direction bg-color-gray">
             <tr>
               <td>
-                <span>{state.state}</span>
+                <span className={''}>{state.shortState}</span>
+                {/*<span className={'non-mobile'}>{state.state}</span>*/}
               </td>
             </tr>
           </table>
@@ -72,7 +70,7 @@ function App() {
       {state.directions?.map((direction) => (<>
         <table className="direction-header bg-color-black">
           <tr>
-            <td className="noWrap">
+            <td className="">
               <span className="color-white uppercase">{direction.from}</span>
             </td>
             <td width="100%">
@@ -97,7 +95,7 @@ function App() {
                 </tr>
               </table>
             </td>
-            <td className="noWrap">
+            <td className="">
               <span className="color-white uppercase">{direction.to}</span>
             </td>
           </tr>
@@ -123,23 +121,32 @@ function App() {
           </thead>
           {direction.flights.map(flight => (<tr>
             <td className={''}>
-              <img width={66} height={50}
-                   src={aircrafts.find(aircraft => aircraft.aircraft === flight.aircraft)?.aircraftImageUrl}/>
+              <img width={66}
+                   alt={flight.aircraft}
+                   src={aircrafts.find(aircraft => aircraft.aircraft === flight.aircraft)?.aircraftImageUrl || flight.aircraft}/>
             </td>
-            <td className={''}><span className={'noWrap'}><span
-              className={'non-mobile'}>{format(parseISO(flight.dateRange.start), 'ccc, ')}</span>{format(parseISO(flight.dateRange.start), 'M/d')} -</span>
-              {' '}<span className={'noWrap'}><span
-                className={'non-mobile'}>{format(parseISO(flight.dateRange.start), 'ccc, ')}</span>{format(parseISO(flight.dateRange.end), 'M/d')}
-              </span>
+            <td className={''} width={'auto'}>
+              <span className={'noWrap'}>
+              <span
+                className={'non-mobile'}>{format(parseISO(flight.dateRange.start), 'ccc, ')}</span>{format(parseISO(flight.dateRange.start), 'M/d')} {flight.dateRange.end && '-'}</span>
+              {' '} {flight.dateRange.end && <span className={'noWrap'}><span
+              className={'non-mobile'}>{format(parseISO(flight.dateRange.end), 'ccc, ')}</span>{format(parseISO(flight.dateRange.end), 'M/d')}
+              </span>}
             </td>
             <td><span className={'noWrap'}>{flight.departure} -</span> {flight.arrival}</td>
             <td>{flight.aircraft}</td>
-            <td width={'100%'}>
+            <td width={'auto'}>
               <span
-                className={''}><span className={'noWrap'}>{formatter.format(flight.price.full)} /</span> <span className={'noWrap'}><span
-                className={'non-mobile'}>{formatter.format(flight.price.half)} / </span>{formatter.format(flight.price.share)}</span> <span className={'non-mobile'}>({flight.numberOfSeatsAvailable})</span>
+                className={''}><span
+                className={'noWrap'}>{flight.price.full > 0 ? formatter.format(flight.price.full) : '-'} /</span> <span
+                className={'noWrap'}><span
+                className={'non-mobile'}>{flight.price.half > 0 ? formatter.format(flight.price.half) : '-'} / </span>{flight.price.shared > 0 ? formatter.format(flight.price.shared) : '-'}</span>
+                <span
+                  className={'d-none'}>({flight.numberOfSeatsAvailable})</span>
               </span>
-              <div className={'right non-mobile'}>{flight.numberOfSeatsReserved}</div>
+              <br/>
+              <div
+                className={'d-none'}>{flight.numberOfSeatsReserved > 0 ? flight.numberOfSeatsReserved : '-'}</div>
             </td>
           </tr>))}
         </table>
@@ -177,15 +184,14 @@ function App() {
         {/*    </td>*/}
         {/*  </tr>))}*/}
         {/*</table>*/}
-        <div className={classNames('centered buttons', i === state.directions?.length - 1 && 'last')}>
-          <div>
-            <a href="https://flyjets.com" target={'_blank'}
-               className="button uppercase fs-18 fw-700 bg-color-green color-white">Go to website</a>
-          </div>
-        </div>
       </>))}
-
     </>))}
+    <div className={classNames('centered buttons last')}>
+      <div>
+        <a href="https://flyjets.com" target={'_blank'}
+           className="button uppercase fs-18 fw-700 bg-color-green color-white">Go to website</a>
+      </div>
+    </div>
     <table className="bottom">
       <tr>
         <td>

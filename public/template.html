@@ -1,17 +1,17 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <title>FLYJETS Featured Flights (Empty Legs): week of May 1, 2023 and beyond</title>
     <meta content="only" name="color-scheme">
     <meta content="only" name="supported-color-schemes">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&amp;display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&amp;family=Rozha+One&amp;display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&amp;display=swap"
           rel="stylesheet">
 
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap');
+
         .body, .darkmode, .darkmode div { /* With class body on the body tag, and all elements represented here that have a background color */
             background-image: linear-gradient(#ffffff, #ffffff) !important;
         }
@@ -19,8 +19,6 @@
         .darkmode p { /* Add other selectors for other text elements */
             -webkit-text-fill-color: #000000 !important;
         }
-
-        @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap');
 
         [style*="Roboto Condensed"] {
             font-family: 'Roboto Condensed', Arial, sans-serif;
@@ -38,6 +36,7 @@
         .root {
             max-width: 600px;
             margin: auto;
+            padding: 0 5px;
         }
 
         .header {
@@ -78,6 +77,7 @@
 
         .directions a {
             color: #000000;
+            text-decoration: none;
         }
 
         .direction {
@@ -87,7 +87,7 @@
             margin-right: 5px;
             left: 5px;
             margin-bottom: 5px;
-            padding: 10px 10px;
+            padding: 8px 8px;
             font-size: 14px;
         }
 
@@ -104,7 +104,6 @@
         .state-header {
             padding: 15px 15px;
             font-size: 20px;
-            margin-bottom: 10px;
         }
 
         .path {
@@ -342,18 +341,30 @@
             vertical-align: middle;
         }
 
+        .mobile {
+            /*display: none;*/
+        }
+
+        .non-mobile {
+            /*display: block;*/
+        }
+
         /* Mobile */
         @media screen and (max-width: 620px) {
             .main-table {
                 /*display: none;*/
             }
 
-            .main-table td {
-                font-size: 12px;
+            .mobile {
+                /*display: block;*/
             }
 
-            .main-table .non-mobile {
-                display: none;
+            .non-mobile {
+                /*display: none;*/
+            }
+
+            .main-table td {
+                font-size: 12px;
             }
 
 
@@ -403,7 +414,7 @@
 </head>
 <body class="bg-color-white"
       style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; background: #FFFFFF; font-family: 'Roboto Condensed', Arial, sans-serif; font-size: 14px; margin: 0; padding: 0;">
-<div id="root" class="root" style="margin: auto; max-width: 600px;">
+<div id="root" class="root" style="margin: auto; max-width: 600px; padding: 0 5px;">
     <table class="header bg-color-black"
            style="background: #000000; border-radius: 10px; font-size: 14px; height: 100px; margin-bottom: 20px; padding: 0 25px; width: 100%;">
         <tbody>
@@ -436,111 +447,127 @@
                 as of May 1, 2023
             </td>
         </tr>
+        <tr>
+            <td class="fw-300" style="font-weight: 300; text-align: center; vertical-align: middle;">Listed below are
+                upcoming empty leg opportunities for the week of May 1st grouped by state of origin; email us or sign in
+                to the app to book. Happy flying!
+            </td>
+        </tr>
         </tbody>
     </table>
     <div class="centered" style="display: table; margin-left: auto; margin-right: auto; padding: 0 10px;">
-        <div class="directions" style="margin-bottom: 20px;"><a href="#newYork" style="color: #000000;">
+        <div class="directions" style="margin-bottom: 20px;"><a href="#newYork"
+                                                                style="color: #000000; text-decoration: none;">
             <table class="direction bg-color-gray"
-                   style="background: #F4F4F4; display: inline-block; font-size: 14px; left: 5px; margin-bottom: 5px; margin-right: 5px; padding: 10px 10px;">
+                   style="background: #F4F4F4; display: inline-block; font-size: 14px; left: 5px; margin-bottom: 5px; margin-right: 5px; padding: 8px 8px;">
                 <tbody>
                 <tr>
-                    <td style="text-align: center; vertical-align: middle;"><span>New York</span></td>
+                    <td style="text-align: center; vertical-align: middle;"><span class="">NY</span></td>
                 </tr>
                 </tbody>
             </table>
-        </a><a href="#florida" style="color: #000000;">
+        </a><a href="#florida" style="color: #000000; text-decoration: none;">
             <table class="direction bg-color-gray"
-                   style="background: #F4F4F4; display: inline-block; font-size: 14px; left: 5px; margin-bottom: 5px; margin-right: 5px; padding: 10px 10px;">
+                   style="background: #F4F4F4; display: inline-block; font-size: 14px; left: 5px; margin-bottom: 5px; margin-right: 5px; padding: 8px 8px;">
                 <tbody>
                 <tr>
-                    <td style="text-align: center; vertical-align: middle;"><span>Florida</span></td>
+                    <td style="text-align: center; vertical-align: middle;"><span class="">FL</span></td>
                 </tr>
                 </tbody>
             </table>
-        </a><a href="#california" style="color: #000000;">
+        </a><a href="#california" style="color: #000000; text-decoration: none;">
             <table class="direction bg-color-gray"
-                   style="background: #F4F4F4; display: inline-block; font-size: 14px; left: 5px; margin-bottom: 5px; margin-right: 5px; padding: 10px 10px;">
+                   style="background: #F4F4F4; display: inline-block; font-size: 14px; left: 5px; margin-bottom: 5px; margin-right: 5px; padding: 8px 8px;">
                 <tbody>
                 <tr>
-                    <td style="text-align: center; vertical-align: middle;"><span>California</span></td>
+                    <td style="text-align: center; vertical-align: middle;"><span class="">CA</span></td>
                 </tr>
                 </tbody>
             </table>
-        </a><a href="#theBahamas" style="color: #000000;">
+        </a><a href="#theBahamas" style="color: #000000; text-decoration: none;">
             <table class="direction bg-color-gray"
-                   style="background: #F4F4F4; display: inline-block; font-size: 14px; left: 5px; margin-bottom: 5px; margin-right: 5px; padding: 10px 10px;">
+                   style="background: #F4F4F4; display: inline-block; font-size: 14px; left: 5px; margin-bottom: 5px; margin-right: 5px; padding: 8px 8px;">
                 <tbody>
                 <tr>
-                    <td style="text-align: center; vertical-align: middle;"><span>The Bahamas</span></td>
+                    <td style="text-align: center; vertical-align: middle;"><span class="">BS</span></td>
                 </tr>
                 </tbody>
             </table>
-        </a><a href="#illinois" style="color: #000000;">
+        </a><a href="#georgia" style="color: #000000; text-decoration: none;">
             <table class="direction bg-color-gray"
-                   style="background: #F4F4F4; display: inline-block; font-size: 14px; left: 5px; margin-bottom: 5px; margin-right: 5px; padding: 10px 10px;">
+                   style="background: #F4F4F4; display: inline-block; font-size: 14px; left: 5px; margin-bottom: 5px; margin-right: 5px; padding: 8px 8px;">
                 <tbody>
                 <tr>
-                    <td style="text-align: center; vertical-align: middle;"><span>Illinois</span></td>
+                    <td style="text-align: center; vertical-align: middle;"><span class="">GA</span></td>
                 </tr>
                 </tbody>
             </table>
-        </a><a href="#indiana" style="color: #000000;">
+        </a><a href="#illinois" style="color: #000000; text-decoration: none;">
             <table class="direction bg-color-gray"
-                   style="background: #F4F4F4; display: inline-block; font-size: 14px; left: 5px; margin-bottom: 5px; margin-right: 5px; padding: 10px 10px;">
+                   style="background: #F4F4F4; display: inline-block; font-size: 14px; left: 5px; margin-bottom: 5px; margin-right: 5px; padding: 8px 8px;">
                 <tbody>
                 <tr>
-                    <td style="text-align: center; vertical-align: middle;"><span>Indiana</span></td>
+                    <td style="text-align: center; vertical-align: middle;"><span class="">IL</span></td>
                 </tr>
                 </tbody>
             </table>
-        </a><a href="#michigan" style="color: #000000;">
+        </a><a href="#indiana" style="color: #000000; text-decoration: none;">
             <table class="direction bg-color-gray"
-                   style="background: #F4F4F4; display: inline-block; font-size: 14px; left: 5px; margin-bottom: 5px; margin-right: 5px; padding: 10px 10px;">
+                   style="background: #F4F4F4; display: inline-block; font-size: 14px; left: 5px; margin-bottom: 5px; margin-right: 5px; padding: 8px 8px;">
                 <tbody>
                 <tr>
-                    <td style="text-align: center; vertical-align: middle;"><span>Michigan</span></td>
+                    <td style="text-align: center; vertical-align: middle;"><span class="">IN</span></td>
                 </tr>
                 </tbody>
             </table>
-        </a><a href="#newHampshire" style="color: #000000;">
+        </a><a href="#michigan" style="color: #000000; text-decoration: none;">
             <table class="direction bg-color-gray"
-                   style="background: #F4F4F4; display: inline-block; font-size: 14px; left: 5px; margin-bottom: 5px; margin-right: 5px; padding: 10px 10px;">
+                   style="background: #F4F4F4; display: inline-block; font-size: 14px; left: 5px; margin-bottom: 5px; margin-right: 5px; padding: 8px 8px;">
                 <tbody>
                 <tr>
-                    <td style="text-align: center; vertical-align: middle;"><span>New Hampshire</span></td>
+                    <td style="text-align: center; vertical-align: middle;"><span class="">MI</span></td>
                 </tr>
                 </tbody>
             </table>
-        </a><a href="#nevada" style="color: #000000;">
+        </a><a href="#newHampshire" style="color: #000000; text-decoration: none;">
             <table class="direction bg-color-gray"
-                   style="background: #F4F4F4; display: inline-block; font-size: 14px; left: 5px; margin-bottom: 5px; margin-right: 5px; padding: 10px 10px;">
+                   style="background: #F4F4F4; display: inline-block; font-size: 14px; left: 5px; margin-bottom: 5px; margin-right: 5px; padding: 8px 8px;">
                 <tbody>
                 <tr>
-                    <td style="text-align: center; vertical-align: middle;"><span>Nevada</span></td>
+                    <td style="text-align: center; vertical-align: middle;"><span class="">NH</span></td>
                 </tr>
                 </tbody>
             </table>
-        </a><a href="#ohio" style="color: #000000;">
+        </a><a href="#nevada" style="color: #000000; text-decoration: none;">
             <table class="direction bg-color-gray"
-                   style="background: #F4F4F4; display: inline-block; font-size: 14px; left: 5px; margin-bottom: 5px; margin-right: 5px; padding: 10px 10px;">
+                   style="background: #F4F4F4; display: inline-block; font-size: 14px; left: 5px; margin-bottom: 5px; margin-right: 5px; padding: 8px 8px;">
                 <tbody>
                 <tr>
-                    <td style="text-align: center; vertical-align: middle;"><span>Ohio</span></td>
+                    <td style="text-align: center; vertical-align: middle;"><span class="">NV</span></td>
                 </tr>
                 </tbody>
             </table>
-        </a><a href="#wisconsin" style="color: #000000;">
+        </a><a href="#ohio" style="color: #000000; text-decoration: none;">
             <table class="direction bg-color-gray"
-                   style="background: #F4F4F4; display: inline-block; font-size: 14px; left: 5px; margin-bottom: 5px; margin-right: 5px; padding: 10px 10px;">
+                   style="background: #F4F4F4; display: inline-block; font-size: 14px; left: 5px; margin-bottom: 5px; margin-right: 5px; padding: 8px 8px;">
                 <tbody>
                 <tr>
-                    <td style="text-align: center; vertical-align: middle;"><span>Wisconsin</span></td>
+                    <td style="text-align: center; vertical-align: middle;"><span class="">OH</span></td>
+                </tr>
+                </tbody>
+            </table>
+        </a><a href="#wisconsin" style="color: #000000; text-decoration: none;">
+            <table class="direction bg-color-gray"
+                   style="background: #F4F4F4; display: inline-block; font-size: 14px; left: 5px; margin-bottom: 5px; margin-right: 5px; padding: 8px 8px;">
+                <tbody>
+                <tr>
+                    <td style="text-align: center; vertical-align: middle;"><span class="">WI</span></td>
                 </tr>
                 </tbody>
             </table>
         </a></div>
     </div>
-    <table id="newYork" class="state-header" style="font-size: 20px; margin-bottom: 10px; padding: 15px 15px;">
+    <table id="newYork" class="state-header" style="font-size: 20px; padding: 15px 15px;">
         <tbody>
         <tr>
             <td class="noWrap" style="white-space: nowrap;"><span class="uppercase" style="text-transform: uppercase;">New York</span>
@@ -552,9 +579,8 @@
            style="background: #000000; border-radius: 10px; font-size: 14px; padding: 15px 15px; width: 100%;">
         <tbody>
         <tr>
-            <td class="noWrap" style="white-space: nowrap;"><span class="color-white uppercase"
-                                                                  style="color: #FFFFFF; text-transform: uppercase;">New York</span>
-            </td>
+            <td class=""><span class="color-white uppercase"
+                               style="color: #FFFFFF; text-transform: uppercase;">New York</span></td>
             <td width="100%">
                 <table class="flex path ph-25" style="padding-left: 25px; padding-right: 25px; width: 100%;">
                     <tbody>
@@ -578,9 +604,8 @@
                     </tbody>
                 </table>
             </td>
-            <td class="noWrap" style="white-space: nowrap;"><span class="color-white uppercase"
-                                                                  style="color: #FFFFFF; text-transform: uppercase;">Florida</span>
-            </td>
+            <td class=""><span class="color-white uppercase"
+                               style="color: #FFFFFF; text-transform: uppercase;">Florida</span></td>
         </tr>
         </tbody>
     </table>
@@ -595,71 +620,67 @@
             </td>
             <td style="border-bottom: 1px solid #DEDEDE; font-size: 14px; padding: 10px;">class/model</td>
             <td style="border-bottom: 1px solid #DEDEDE; font-size: 14px; padding: 10px;">price (full / <span
-                    class="noWrap" style="white-space: nowrap;"><span class="non-mobile"> half /</span> share)</span>
+                    class="noWrap" style="white-space: nowrap;"><span class="non-mobile" style=""> half /</span> share)</span>
             </td>
         </tr>
         </thead>
         <tbody>
         <tr>
             <td class="" style="border-bottom: 1px solid #DEDEDE; font-size: 14px; padding: 10px;"><img width="66"
-                                                                                                        height="50"
+                                                                                                        alt="Legacy 600 (Heavy)"
                                                                                                         src="https://d3k81ch9hvuctc.cloudfront.net/company/SZYCZY/images/98af9bdc-3ac1-4273-b35a-8aad5c652e5f.jpeg"
                                                                                                         style="height: 50px; object-fit: cover; width: 66px;">
             </td>
-            <td class="" style="border-bottom: 1px solid #DEDEDE; font-size: 14px; padding: 10px;"><span class="noWrap"
-                                                                                                         style="white-space: nowrap;"><span
-                    class="non-mobile">Tue, </span>5/2 -</span> <span class="noWrap" style="white-space: nowrap;"><span
-                    class="non-mobile">Tue, </span>5/6</span></td>
+            <td class="" width="auto" style="border-bottom: 1px solid #DEDEDE; font-size: 14px; padding: 10px;"><span
+                    class="noWrap" style="white-space: nowrap;"><span class="non-mobile"
+                                                                      style="">Wed, </span>5/3 -</span> <span
+                    class="noWrap" style="white-space: nowrap;"><span class="non-mobile" style="">Fri, </span>5/5</span>
+            </td>
             <td style="border-bottom: 1px solid #DEDEDE; font-size: 14px; padding: 10px;"><span class="noWrap"
                                                                                                 style="white-space: nowrap;">KTEB -</span>
                 KPBI
             </td>
             <td style="border-bottom: 1px solid #DEDEDE; font-size: 14px; padding: 10px;">Legacy 600 (Heavy)</td>
-            <td width="100%" style="border-bottom: 1px solid #DEDEDE; font-size: 14px; padding: 10px;"><span
+            <td width="auto" style="border-bottom: 1px solid #DEDEDE; font-size: 14px; padding: 10px;"><span
                     class=""><span class="noWrap" style="white-space: nowrap;">$19,000 /</span> <span class="noWrap"
                                                                                                       style="white-space: nowrap;"><span
-                    class="non-mobile">$9,500 / </span>$1,900</span> <span class="non-mobile">(12)</span></span>
-                <div class="right non-mobile" style="text-align: right;">10</div>
+                    class="non-mobile" style="">$9,500 / </span>$1,900</span><span class="d-none"
+                                                                                   style="display: none;">(12)</span></span><br>
+                <div class="d-none" style="display: none;">2</div>
             </td>
         </tr>
         <tr>
             <td class="" style="border-bottom: 1px solid #DEDEDE; font-size: 14px; padding: 10px;"><img width="66"
-                                                                                                        height="50"
-                                                                                                        src="https://d3k81ch9hvuctc.cloudfront.net/company/SZYCZY/images/94974887-ff32-47c3-bcf8-e99bad8b165d.jpeg"
+                                                                                                        alt="Hawker 800XP (Midsize)"
+                                                                                                        src="https://d3k81ch9hvuctc.cloudfront.net/company/SZYCZY/images/e9a3124e-59fe-4bc0-a1ed-303fc860484a.jpeg"
                                                                                                         style="height: 50px; object-fit: cover; width: 66px;">
             </td>
-            <td class="" style="border-bottom: 1px solid #DEDEDE; font-size: 14px; padding: 10px;"><span class="noWrap"
-                                                                                                         style="white-space: nowrap;"><span
-                    class="non-mobile">Sat, </span>5/6 -</span> <span class="noWrap" style="white-space: nowrap;"><span
-                    class="non-mobile">Sat, </span>5/7</span></td>
+            <td class="" width="auto" style="border-bottom: 1px solid #DEDEDE; font-size: 14px; padding: 10px;"><span
+                    class="noWrap" style="white-space: nowrap;"><span class="non-mobile"
+                                                                      style="">Sat, </span>5/6 -</span> <span
+                    class="noWrap" style="white-space: nowrap;"><span class="non-mobile" style="">Sun, </span>5/7</span>
+            </td>
             <td style="border-bottom: 1px solid #DEDEDE; font-size: 14px; padding: 10px;"><span class="noWrap"
                                                                                                 style="white-space: nowrap;">KTEB -</span>
                 KAPF
             </td>
-            <td style="border-bottom: 1px solid #DEDEDE; font-size: 14px; padding: 10px;">Hawker 800 XP (Midsize)</td>
-            <td width="100%" style="border-bottom: 1px solid #DEDEDE; font-size: 14px; padding: 10px;"><span
+            <td style="border-bottom: 1px solid #DEDEDE; font-size: 14px; padding: 10px;">Hawker 800XP (Midsize)</td>
+            <td width="auto" style="border-bottom: 1px solid #DEDEDE; font-size: 14px; padding: 10px;"><span
                     class=""><span class="noWrap" style="white-space: nowrap;">$16,900 /</span> <span class="noWrap"
                                                                                                       style="white-space: nowrap;"><span
-                    class="non-mobile">$8,450 / </span>$3,380</span> <span class="non-mobile">(8)</span></span>
-                <div class="right non-mobile" style="text-align: right;">5</div>
+                    class="non-mobile" style="">$8,450 / </span>$3,380</span><span class="d-none"
+                                                                                   style="display: none;">(8)</span></span><br>
+                <div class="d-none" style="display: none;">-</div>
             </td>
         </tr>
         </tbody>
     </table>
-    <div class="centered buttons"
-         style="display: table; margin-bottom: 45px; margin-left: auto; margin-right: auto; padding: 0 10px;">
-        <div><a href="https://flyjets.com" target="_blank"
-                class="button uppercase fs-18 fw-700 bg-color-green color-white"
-                style="background: #00C55A; border: 0; border-radius: 10px; color: #FFFFFF; display: inline-block; font-size: 18px; font-weight: 700; padding: 12px 37px; text-decoration: none; text-transform: uppercase;">Go
-            to website</a></div>
-    </div>
     <table class="direction-header bg-color-black"
            style="background: #000000; border-radius: 10px; font-size: 14px; padding: 15px 15px; width: 100%;">
         <tbody>
         <tr>
-            <td class="noWrap" style="white-space: nowrap;"><span class="color-white uppercase"
-                                                                  style="color: #FFFFFF; text-transform: uppercase;">New York</span>
-            </td>
+            <td class=""><span class="color-white uppercase"
+                               style="color: #FFFFFF; text-transform: uppercase;">New York</span></td>
             <td width="100%">
                 <table class="flex path ph-25" style="padding-left: 25px; padding-right: 25px; width: 100%;">
                     <tbody>
@@ -683,8 +704,7 @@
                     </tbody>
                 </table>
             </td>
-            <td class="noWrap" style="white-space: nowrap;"><span class="color-white uppercase"
-                                                                  style="color: #FFFFFF; text-transform: uppercase;">California</span>
+            <td class=""><span class="color-white uppercase" style="color: #FFFFFF; text-transform: uppercase;">California</span>
             </td>
         </tr>
         </tbody>
@@ -700,43 +720,38 @@
             </td>
             <td style="border-bottom: 1px solid #DEDEDE; font-size: 14px; padding: 10px;">class/model</td>
             <td style="border-bottom: 1px solid #DEDEDE; font-size: 14px; padding: 10px;">price (full / <span
-                    class="noWrap" style="white-space: nowrap;"><span class="non-mobile"> half /</span> share)</span>
+                    class="noWrap" style="white-space: nowrap;"><span class="non-mobile" style=""> half /</span> share)</span>
             </td>
         </tr>
         </thead>
         <tbody>
         <tr>
             <td class="" style="border-bottom: 1px solid #DEDEDE; font-size: 14px; padding: 10px;"><img width="66"
-                                                                                                        height="50"
+                                                                                                        alt="Legacy 600 (Heavy)"
                                                                                                         src="https://d3k81ch9hvuctc.cloudfront.net/company/SZYCZY/images/98af9bdc-3ac1-4273-b35a-8aad5c652e5f.jpeg"
                                                                                                         style="height: 50px; object-fit: cover; width: 66px;">
             </td>
-            <td class="" style="border-bottom: 1px solid #DEDEDE; font-size: 14px; padding: 10px;"><span class="noWrap"
-                                                                                                         style="white-space: nowrap;"><span
-                    class="non-mobile">Wed, </span>5/3 -</span> <span class="noWrap" style="white-space: nowrap;"><span
-                    class="non-mobile">Wed, </span>5/5</span></td>
+            <td class="" width="auto" style="border-bottom: 1px solid #DEDEDE; font-size: 14px; padding: 10px;"><span
+                    class="noWrap" style="white-space: nowrap;"><span class="non-mobile"
+                                                                      style="">Wed, </span>5/3 -</span> <span
+                    class="noWrap" style="white-space: nowrap;"><span class="non-mobile" style="">Fri, </span>5/5</span>
+            </td>
             <td style="border-bottom: 1px solid #DEDEDE; font-size: 14px; padding: 10px;"><span class="noWrap"
                                                                                                 style="white-space: nowrap;">KTEB -</span>
                 KVNY
             </td>
             <td style="border-bottom: 1px solid #DEDEDE; font-size: 14px; padding: 10px;">Legacy 600 (Heavy)</td>
-            <td width="100%" style="border-bottom: 1px solid #DEDEDE; font-size: 14px; padding: 10px;"><span
+            <td width="auto" style="border-bottom: 1px solid #DEDEDE; font-size: 14px; padding: 10px;"><span
                     class=""><span class="noWrap" style="white-space: nowrap;">$35,900 /</span> <span class="noWrap"
                                                                                                       style="white-space: nowrap;"><span
-                    class="non-mobile">$17,950 / </span>$3,590</span> <span class="non-mobile">(12)</span></span>
-                <div class="right non-mobile" style="text-align: right;">10</div>
+                    class="non-mobile" style="">$17,950 / </span>$3,590</span><span class="d-none"
+                                                                                    style="display: none;">(12)</span></span><br>
+                <div class="d-none" style="display: none;">-</div>
             </td>
         </tr>
         </tbody>
     </table>
-    <div class="centered buttons"
-         style="display: table; margin-bottom: 45px; margin-left: auto; margin-right: auto; padding: 0 10px;">
-        <div><a href="https://flyjets.com" target="_blank"
-                class="button uppercase fs-18 fw-700 bg-color-green color-white"
-                style="background: #00C55A; border: 0; border-radius: 10px; color: #FFFFFF; display: inline-block; font-size: 18px; font-weight: 700; padding: 12px 37px; text-decoration: none; text-transform: uppercase;">Go
-            to website</a></div>
-    </div>
-    <table id="florida" class="state-header" style="font-size: 20px; margin-bottom: 10px; padding: 15px 15px;">
+    <table id="florida" class="state-header" style="font-size: 20px; padding: 15px 15px;">
         <tbody>
         <tr>
             <td class="noWrap" style="white-space: nowrap;"><span class="uppercase" style="text-transform: uppercase;">Florida</span>
@@ -744,7 +759,83 @@
         </tr>
         </tbody>
     </table>
-    <table id="california" class="state-header" style="font-size: 20px; margin-bottom: 10px; padding: 15px 15px;">
+    <table class="direction-header bg-color-black"
+           style="background: #000000; border-radius: 10px; font-size: 14px; padding: 15px 15px; width: 100%;">
+        <tbody>
+        <tr>
+            <td class=""><span class="color-white uppercase" style="color: #FFFFFF; text-transform: uppercase;">Orlando (or close)</span>
+            </td>
+            <td width="100%">
+                <table class="flex path ph-25" style="padding-left: 25px; padding-right: 25px; width: 100%;">
+                    <tbody>
+                    <tr>
+                        <td><span class="dot border-color-white"
+                                  style="border-color: #FFFFFF; border-radius: 50%; border-style: solid; border-width: 1px; display: inline-block; height: 11px; width: 11px;"></span>
+                        </td>
+                        <td width="50%">
+                            <div class="flex line-dotted" style="border: 1px dashed #545454;"></div>
+                        </td>
+                        <td><img width="18px" height="18px"
+                                 src="https://d3k81ch9hvuctc.cloudfront.net/company/SZYCZY/images/5da1beec-f817-4a40-83b5-02212ed87fb0.png">
+                        </td>
+                        <td width="50%">
+                            <div class="flex line-dotted" style="border: 1px dashed #545454;"></div>
+                        </td>
+                        <td><span class="dot border-color-white bg-color-white"
+                                  style="background: #FFFFFF; border-color: #FFFFFF; border-radius: 50%; border-style: solid; border-width: 1px; display: inline-block; height: 11px; width: 11px;"></span>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </td>
+            <td class=""><span class="color-white uppercase"
+                               style="color: #FFFFFF; text-transform: uppercase;">Miami</span></td>
+        </tr>
+        </tbody>
+    </table>
+    <table class="main-table mb-25" cellpadding="0" cellspacing="0" style="margin-bottom: 25px; width: 100%;">
+        <thead style="height: 44px;">
+        <tr class="va-m color-gray" style="color: #7E7E7E; vertical-align: middle;">
+            <td class="" style="border-bottom: 1px solid #DEDEDE; font-size: 14px; padding: 10px;"></td>
+            <td style="border-bottom: 1px solid #DEDEDE; font-size: 14px; padding: 10px;">date</td>
+            <td class="" style="border-bottom: 1px solid #DEDEDE; font-size: 14px; padding: 10px;"><span class="noWrap"
+                                                                                                         style="white-space: nowrap;">depart -</span>
+                arrive
+            </td>
+            <td style="border-bottom: 1px solid #DEDEDE; font-size: 14px; padding: 10px;">class/model</td>
+            <td style="border-bottom: 1px solid #DEDEDE; font-size: 14px; padding: 10px;">price (full / <span
+                    class="noWrap" style="white-space: nowrap;"><span class="non-mobile" style=""> half /</span> share)</span>
+            </td>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td class="" style="border-bottom: 1px solid #DEDEDE; font-size: 14px; padding: 10px;"><img width="66"
+                                                                                                        alt="SF Vision 50 (VLJ)"
+                                                                                                        src="https://d3k81ch9hvuctc.cloudfront.net/company/SZYCZY/images/e489b833-eee9-423c-8c1d-3f0ba704b813.jpeg"
+                                                                                                        style="height: 50px; object-fit: cover; width: 66px;">
+            </td>
+            <td class="" width="auto" style="border-bottom: 1px solid #DEDEDE; font-size: 14px; padding: 10px;"><span
+                    class="noWrap" style="white-space: nowrap;"><span class="non-mobile"
+                                                                      style="">Tue, </span>5/2 -</span> <span
+                    class="noWrap" style="white-space: nowrap;"><span class="non-mobile" style="">Sun, </span>5/7</span>
+            </td>
+            <td style="border-bottom: 1px solid #DEDEDE; font-size: 14px; padding: 10px;"><span class="noWrap"
+                                                                                                style="white-space: nowrap;">KORL -</span>
+                KOPF
+            </td>
+            <td style="border-bottom: 1px solid #DEDEDE; font-size: 14px; padding: 10px;">SF Vision 50 (VLJ)</td>
+            <td width="auto" style="border-bottom: 1px solid #DEDEDE; font-size: 14px; padding: 10px;"><span
+                    class=""><span class="noWrap" style="white-space: nowrap;">$3,500 /</span> <span class="noWrap"
+                                                                                                     style="white-space: nowrap;"><span
+                    class="non-mobile" style="">- / </span>-</span><span class="d-none"
+                                                                         style="display: none;">(4)</span></span><br>
+                <div class="d-none" style="display: none;">-</div>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+    <table id="california" class="state-header" style="font-size: 20px; padding: 15px 15px;">
         <tbody>
         <tr>
             <td class="noWrap" style="white-space: nowrap;"><span class="uppercase" style="text-transform: uppercase;">California</span>
@@ -752,7 +843,159 @@
         </tr>
         </tbody>
     </table>
-    <table id="theBahamas" class="state-header" style="font-size: 20px; margin-bottom: 10px; padding: 15px 15px;">
+    <table class="direction-header bg-color-black"
+           style="background: #000000; border-radius: 10px; font-size: 14px; padding: 15px 15px; width: 100%;">
+        <tbody>
+        <tr>
+            <td class=""><span class="color-white uppercase" style="color: #FFFFFF; text-transform: uppercase;">Los Angeles</span>
+            </td>
+            <td width="100%">
+                <table class="flex path ph-25" style="padding-left: 25px; padding-right: 25px; width: 100%;">
+                    <tbody>
+                    <tr>
+                        <td><span class="dot border-color-white"
+                                  style="border-color: #FFFFFF; border-radius: 50%; border-style: solid; border-width: 1px; display: inline-block; height: 11px; width: 11px;"></span>
+                        </td>
+                        <td width="50%">
+                            <div class="flex line-dotted" style="border: 1px dashed #545454;"></div>
+                        </td>
+                        <td><img width="18px" height="18px"
+                                 src="https://d3k81ch9hvuctc.cloudfront.net/company/SZYCZY/images/5da1beec-f817-4a40-83b5-02212ed87fb0.png">
+                        </td>
+                        <td width="50%">
+                            <div class="flex line-dotted" style="border: 1px dashed #545454;"></div>
+                        </td>
+                        <td><span class="dot border-color-white bg-color-white"
+                                  style="background: #FFFFFF; border-color: #FFFFFF; border-radius: 50%; border-style: solid; border-width: 1px; display: inline-block; height: 11px; width: 11px;"></span>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </td>
+            <td class=""><span class="color-white uppercase"
+                               style="color: #FFFFFF; text-transform: uppercase;">New York</span></td>
+        </tr>
+        </tbody>
+    </table>
+    <table class="main-table mb-25" cellpadding="0" cellspacing="0" style="margin-bottom: 25px; width: 100%;">
+        <thead style="height: 44px;">
+        <tr class="va-m color-gray" style="color: #7E7E7E; vertical-align: middle;">
+            <td class="" style="border-bottom: 1px solid #DEDEDE; font-size: 14px; padding: 10px;"></td>
+            <td style="border-bottom: 1px solid #DEDEDE; font-size: 14px; padding: 10px;">date</td>
+            <td class="" style="border-bottom: 1px solid #DEDEDE; font-size: 14px; padding: 10px;"><span class="noWrap"
+                                                                                                         style="white-space: nowrap;">depart -</span>
+                arrive
+            </td>
+            <td style="border-bottom: 1px solid #DEDEDE; font-size: 14px; padding: 10px;">class/model</td>
+            <td style="border-bottom: 1px solid #DEDEDE; font-size: 14px; padding: 10px;">price (full / <span
+                    class="noWrap" style="white-space: nowrap;"><span class="non-mobile" style=""> half /</span> share)</span>
+            </td>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td class="" style="border-bottom: 1px solid #DEDEDE; font-size: 14px; padding: 10px;"><img width="66"
+                                                                                                        alt="Gulfstream G500 (ULR)"
+                                                                                                        src="https://d3k81ch9hvuctc.cloudfront.net/company/SZYCZY/images/ef224c3e-c194-4256-828d-b8053bc91ff6.jpeg"
+                                                                                                        style="height: 50px; object-fit: cover; width: 66px;">
+            </td>
+            <td class="" width="auto" style="border-bottom: 1px solid #DEDEDE; font-size: 14px; padding: 10px;"><span
+                    class="noWrap" style="white-space: nowrap;"><span class="non-mobile"
+                                                                      style="">Tue, </span>5/2 -</span> <span
+                    class="noWrap" style="white-space: nowrap;"><span class="non-mobile" style="">Sat, </span>5/6</span>
+            </td>
+            <td style="border-bottom: 1px solid #DEDEDE; font-size: 14px; padding: 10px;"><span class="noWrap"
+                                                                                                style="white-space: nowrap;">KVNY -</span>
+                KTEB
+            </td>
+            <td style="border-bottom: 1px solid #DEDEDE; font-size: 14px; padding: 10px;">Gulfstream G500 (ULR)</td>
+            <td width="auto" style="border-bottom: 1px solid #DEDEDE; font-size: 14px; padding: 10px;"><span
+                    class=""><span class="noWrap" style="white-space: nowrap;">$43,000 /</span> <span class="noWrap"
+                                                                                                      style="white-space: nowrap;"><span
+                    class="non-mobile" style="">- / </span>$3,308</span><span class="d-none"
+                                                                              style="display: none;">(16)</span></span><br>
+                <div class="d-none" style="display: none;">-</div>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+    <table class="direction-header bg-color-black"
+           style="background: #000000; border-radius: 10px; font-size: 14px; padding: 15px 15px; width: 100%;">
+        <tbody>
+        <tr>
+            <td class=""><span class="color-white uppercase" style="color: #FFFFFF; text-transform: uppercase;">Los Angeles</span>
+            </td>
+            <td width="100%">
+                <table class="flex path ph-25" style="padding-left: 25px; padding-right: 25px; width: 100%;">
+                    <tbody>
+                    <tr>
+                        <td><span class="dot border-color-white"
+                                  style="border-color: #FFFFFF; border-radius: 50%; border-style: solid; border-width: 1px; display: inline-block; height: 11px; width: 11px;"></span>
+                        </td>
+                        <td width="50%">
+                            <div class="flex line-dotted" style="border: 1px dashed #545454;"></div>
+                        </td>
+                        <td><img width="18px" height="18px"
+                                 src="https://d3k81ch9hvuctc.cloudfront.net/company/SZYCZY/images/5da1beec-f817-4a40-83b5-02212ed87fb0.png">
+                        </td>
+                        <td width="50%">
+                            <div class="flex line-dotted" style="border: 1px dashed #545454;"></div>
+                        </td>
+                        <td><span class="dot border-color-white bg-color-white"
+                                  style="background: #FFFFFF; border-color: #FFFFFF; border-radius: 50%; border-style: solid; border-width: 1px; display: inline-block; height: 11px; width: 11px;"></span>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </td>
+            <td class=""><span class="color-white uppercase"
+                               style="color: #FFFFFF; text-transform: uppercase;">Hawaii</span></td>
+        </tr>
+        </tbody>
+    </table>
+    <table class="main-table mb-25" cellpadding="0" cellspacing="0" style="margin-bottom: 25px; width: 100%;">
+        <thead style="height: 44px;">
+        <tr class="va-m color-gray" style="color: #7E7E7E; vertical-align: middle;">
+            <td class="" style="border-bottom: 1px solid #DEDEDE; font-size: 14px; padding: 10px;"></td>
+            <td style="border-bottom: 1px solid #DEDEDE; font-size: 14px; padding: 10px;">date</td>
+            <td class="" style="border-bottom: 1px solid #DEDEDE; font-size: 14px; padding: 10px;"><span class="noWrap"
+                                                                                                         style="white-space: nowrap;">depart -</span>
+                arrive
+            </td>
+            <td style="border-bottom: 1px solid #DEDEDE; font-size: 14px; padding: 10px;">class/model</td>
+            <td style="border-bottom: 1px solid #DEDEDE; font-size: 14px; padding: 10px;">price (full / <span
+                    class="noWrap" style="white-space: nowrap;"><span class="non-mobile" style=""> half /</span> share)</span>
+            </td>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td class="" style="border-bottom: 1px solid #DEDEDE; font-size: 14px; padding: 10px;"><img width="66"
+                                                                                                        alt="Legacy 600 (Heavy)"
+                                                                                                        src="https://d3k81ch9hvuctc.cloudfront.net/company/SZYCZY/images/98af9bdc-3ac1-4273-b35a-8aad5c652e5f.jpeg"
+                                                                                                        style="height: 50px; object-fit: cover; width: 66px;">
+            </td>
+            <td class="" width="auto" style="border-bottom: 1px solid #DEDEDE; font-size: 14px; padding: 10px;"><span
+                    class="noWrap" style="white-space: nowrap;"><span class="non-mobile"
+                                                                      style="">Fri, </span>5/5 -</span> <span
+                    class="noWrap" style="white-space: nowrap;"><span class="non-mobile" style="">Sat, </span>5/6</span>
+            </td>
+            <td style="border-bottom: 1px solid #DEDEDE; font-size: 14px; padding: 10px;"><span class="noWrap"
+                                                                                                style="white-space: nowrap;">KVNY -</span>
+                PHOG
+            </td>
+            <td style="border-bottom: 1px solid #DEDEDE; font-size: 14px; padding: 10px;">Legacy 600 (Heavy)</td>
+            <td width="auto" style="border-bottom: 1px solid #DEDEDE; font-size: 14px; padding: 10px;"><span
+                    class=""><span class="noWrap" style="white-space: nowrap;">$39,500 /</span> <span class="noWrap"
+                                                                                                      style="white-space: nowrap;"><span
+                    class="non-mobile" style="">$19,750 / </span>$3,950</span><span class="d-none"
+                                                                                    style="display: none;">(12)</span></span><br>
+                <div class="d-none" style="display: none;">-</div>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+    <table id="theBahamas" class="state-header" style="font-size: 20px; padding: 15px 15px;">
         <tbody>
         <tr>
             <td class="noWrap" style="white-space: nowrap;"><span class="uppercase" style="text-transform: uppercase;">The Bahamas</span>
@@ -760,7 +1003,165 @@
         </tr>
         </tbody>
     </table>
-    <table id="illinois" class="state-header" style="font-size: 20px; margin-bottom: 10px; padding: 15px 15px;">
+    <table class="direction-header bg-color-black"
+           style="background: #000000; border-radius: 10px; font-size: 14px; padding: 15px 15px; width: 100%;">
+        <tbody>
+        <tr>
+            <td class=""><span class="color-white uppercase"
+                               style="color: #FFFFFF; text-transform: uppercase;">Bahamas</span></td>
+            <td width="100%">
+                <table class="flex path ph-25" style="padding-left: 25px; padding-right: 25px; width: 100%;">
+                    <tbody>
+                    <tr>
+                        <td><span class="dot border-color-white"
+                                  style="border-color: #FFFFFF; border-radius: 50%; border-style: solid; border-width: 1px; display: inline-block; height: 11px; width: 11px;"></span>
+                        </td>
+                        <td width="50%">
+                            <div class="flex line-dotted" style="border: 1px dashed #545454;"></div>
+                        </td>
+                        <td><img width="18px" height="18px"
+                                 src="https://d3k81ch9hvuctc.cloudfront.net/company/SZYCZY/images/5da1beec-f817-4a40-83b5-02212ed87fb0.png">
+                        </td>
+                        <td width="50%">
+                            <div class="flex line-dotted" style="border: 1px dashed #545454;"></div>
+                        </td>
+                        <td><span class="dot border-color-white bg-color-white"
+                                  style="background: #FFFFFF; border-color: #FFFFFF; border-radius: 50%; border-style: solid; border-width: 1px; display: inline-block; height: 11px; width: 11px;"></span>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </td>
+            <td class=""><span class="color-white uppercase"
+                               style="color: #FFFFFF; text-transform: uppercase;">Florida</span></td>
+        </tr>
+        </tbody>
+    </table>
+    <table class="main-table mb-25" cellpadding="0" cellspacing="0" style="margin-bottom: 25px; width: 100%;">
+        <thead style="height: 44px;">
+        <tr class="va-m color-gray" style="color: #7E7E7E; vertical-align: middle;">
+            <td class="" style="border-bottom: 1px solid #DEDEDE; font-size: 14px; padding: 10px;"></td>
+            <td style="border-bottom: 1px solid #DEDEDE; font-size: 14px; padding: 10px;">date</td>
+            <td class="" style="border-bottom: 1px solid #DEDEDE; font-size: 14px; padding: 10px;"><span class="noWrap"
+                                                                                                         style="white-space: nowrap;">depart -</span>
+                arrive
+            </td>
+            <td style="border-bottom: 1px solid #DEDEDE; font-size: 14px; padding: 10px;">class/model</td>
+            <td style="border-bottom: 1px solid #DEDEDE; font-size: 14px; padding: 10px;">price (full / <span
+                    class="noWrap" style="white-space: nowrap;"><span class="non-mobile" style=""> half /</span> share)</span>
+            </td>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td class="" style="border-bottom: 1px solid #DEDEDE; font-size: 14px; padding: 10px;"><img width="66"
+                                                                                                        alt="Gulfstream G200 (Super Mid)"
+                                                                                                        src="https://d3k81ch9hvuctc.cloudfront.net/company/SZYCZY/images/8b027ab7-6734-4e5d-b8c3-3033a02624f2.jpeg"
+                                                                                                        style="height: 50px; object-fit: cover; width: 66px;">
+            </td>
+            <td class="" width="auto" style="border-bottom: 1px solid #DEDEDE; font-size: 14px; padding: 10px;"><span
+                    class="noWrap" style="white-space: nowrap;"><span class="non-mobile"
+                                                                      style="">Sun, </span>5/7 </span></td>
+            <td style="border-bottom: 1px solid #DEDEDE; font-size: 14px; padding: 10px;"><span class="noWrap"
+                                                                                                style="white-space: nowrap;">MYNN -</span>
+                KPBI
+            </td>
+            <td style="border-bottom: 1px solid #DEDEDE; font-size: 14px; padding: 10px;">Gulfstream G200 (Super Mid)
+            </td>
+            <td width="auto" style="border-bottom: 1px solid #DEDEDE; font-size: 14px; padding: 10px;"><span
+                    class=""><span class="noWrap" style="white-space: nowrap;">$7,500 /</span> <span class="noWrap"
+                                                                                                     style="white-space: nowrap;"><span
+                    class="non-mobile" style="">$3,750 / </span>$833</span><span class="d-none" style="display: none;">(9)</span></span><br>
+                <div class="d-none" style="display: none;">-</div>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+    <table id="georgia" class="state-header" style="font-size: 20px; padding: 15px 15px;">
+        <tbody>
+        <tr>
+            <td class="noWrap" style="white-space: nowrap;"><span class="uppercase" style="text-transform: uppercase;">Georgia</span>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+    <table class="direction-header bg-color-black"
+           style="background: #000000; border-radius: 10px; font-size: 14px; padding: 15px 15px; width: 100%;">
+        <tbody>
+        <tr>
+            <td class=""><span class="color-white uppercase"
+                               style="color: #FFFFFF; text-transform: uppercase;">Atlanta</span></td>
+            <td width="100%">
+                <table class="flex path ph-25" style="padding-left: 25px; padding-right: 25px; width: 100%;">
+                    <tbody>
+                    <tr>
+                        <td><span class="dot border-color-white"
+                                  style="border-color: #FFFFFF; border-radius: 50%; border-style: solid; border-width: 1px; display: inline-block; height: 11px; width: 11px;"></span>
+                        </td>
+                        <td width="50%">
+                            <div class="flex line-dotted" style="border: 1px dashed #545454;"></div>
+                        </td>
+                        <td><img width="18px" height="18px"
+                                 src="https://d3k81ch9hvuctc.cloudfront.net/company/SZYCZY/images/5da1beec-f817-4a40-83b5-02212ed87fb0.png">
+                        </td>
+                        <td width="50%">
+                            <div class="flex line-dotted" style="border: 1px dashed #545454;"></div>
+                        </td>
+                        <td><span class="dot border-color-white bg-color-white"
+                                  style="background: #FFFFFF; border-color: #FFFFFF; border-radius: 50%; border-style: solid; border-width: 1px; display: inline-block; height: 11px; width: 11px;"></span>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </td>
+            <td class=""><span class="color-white uppercase"
+                               style="color: #FFFFFF; text-transform: uppercase;">Miami</span></td>
+        </tr>
+        </tbody>
+    </table>
+    <table class="main-table mb-25" cellpadding="0" cellspacing="0" style="margin-bottom: 25px; width: 100%;">
+        <thead style="height: 44px;">
+        <tr class="va-m color-gray" style="color: #7E7E7E; vertical-align: middle;">
+            <td class="" style="border-bottom: 1px solid #DEDEDE; font-size: 14px; padding: 10px;"></td>
+            <td style="border-bottom: 1px solid #DEDEDE; font-size: 14px; padding: 10px;">date</td>
+            <td class="" style="border-bottom: 1px solid #DEDEDE; font-size: 14px; padding: 10px;"><span class="noWrap"
+                                                                                                         style="white-space: nowrap;">depart -</span>
+                arrive
+            </td>
+            <td style="border-bottom: 1px solid #DEDEDE; font-size: 14px; padding: 10px;">class/model</td>
+            <td style="border-bottom: 1px solid #DEDEDE; font-size: 14px; padding: 10px;">price (full / <span
+                    class="noWrap" style="white-space: nowrap;"><span class="non-mobile" style=""> half /</span> share)</span>
+            </td>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td class="" style="border-bottom: 1px solid #DEDEDE; font-size: 14px; padding: 10px;"><img width="66"
+                                                                                                        alt="SF Vision 50 (VLJ)"
+                                                                                                        src="https://d3k81ch9hvuctc.cloudfront.net/company/SZYCZY/images/e489b833-eee9-423c-8c1d-3f0ba704b813.jpeg"
+                                                                                                        style="height: 50px; object-fit: cover; width: 66px;">
+            </td>
+            <td class="" width="auto" style="border-bottom: 1px solid #DEDEDE; font-size: 14px; padding: 10px;"><span
+                    class="noWrap" style="white-space: nowrap;"><span class="non-mobile"
+                                                                      style="">Tue, </span>5/2 -</span> <span
+                    class="noWrap" style="white-space: nowrap;"><span class="non-mobile" style="">Sun, </span>5/7</span>
+            </td>
+            <td style="border-bottom: 1px solid #DEDEDE; font-size: 14px; padding: 10px;"><span class="noWrap"
+                                                                                                style="white-space: nowrap;">KPDK -</span>
+                KOPF
+            </td>
+            <td style="border-bottom: 1px solid #DEDEDE; font-size: 14px; padding: 10px;">SF Vision 50 (VLJ)</td>
+            <td width="auto" style="border-bottom: 1px solid #DEDEDE; font-size: 14px; padding: 10px;"><span
+                    class=""><span class="noWrap" style="white-space: nowrap;">$6,800 /</span> <span class="noWrap"
+                                                                                                     style="white-space: nowrap;"><span
+                    class="non-mobile" style="">- / </span>-</span><span class="d-none"
+                                                                         style="display: none;">(4)</span></span><br>
+                <div class="d-none" style="display: none;">-</div>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+    <table id="illinois" class="state-header" style="font-size: 20px; padding: 15px 15px;">
         <tbody>
         <tr>
             <td class="noWrap" style="white-space: nowrap;"><span class="uppercase" style="text-transform: uppercase;">Illinois</span>
@@ -768,7 +1169,160 @@
         </tr>
         </tbody>
     </table>
-    <table id="indiana" class="state-header" style="font-size: 20px; margin-bottom: 10px; padding: 15px 15px;">
+    <table class="direction-header bg-color-black"
+           style="background: #000000; border-radius: 10px; font-size: 14px; padding: 15px 15px; width: 100%;">
+        <tbody>
+        <tr>
+            <td class=""><span class="color-white uppercase"
+                               style="color: #FFFFFF; text-transform: uppercase;">Chicago</span></td>
+            <td width="100%">
+                <table class="flex path ph-25" style="padding-left: 25px; padding-right: 25px; width: 100%;">
+                    <tbody>
+                    <tr>
+                        <td><span class="dot border-color-white"
+                                  style="border-color: #FFFFFF; border-radius: 50%; border-style: solid; border-width: 1px; display: inline-block; height: 11px; width: 11px;"></span>
+                        </td>
+                        <td width="50%">
+                            <div class="flex line-dotted" style="border: 1px dashed #545454;"></div>
+                        </td>
+                        <td><img width="18px" height="18px"
+                                 src="https://d3k81ch9hvuctc.cloudfront.net/company/SZYCZY/images/5da1beec-f817-4a40-83b5-02212ed87fb0.png">
+                        </td>
+                        <td width="50%">
+                            <div class="flex line-dotted" style="border: 1px dashed #545454;"></div>
+                        </td>
+                        <td><span class="dot border-color-white bg-color-white"
+                                  style="background: #FFFFFF; border-color: #FFFFFF; border-radius: 50%; border-style: solid; border-width: 1px; display: inline-block; height: 11px; width: 11px;"></span>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </td>
+            <td class=""><span class="color-white uppercase"
+                               style="color: #FFFFFF; text-transform: uppercase;">Bahamas</span></td>
+        </tr>
+        </tbody>
+    </table>
+    <table class="main-table mb-25" cellpadding="0" cellspacing="0" style="margin-bottom: 25px; width: 100%;">
+        <thead style="height: 44px;">
+        <tr class="va-m color-gray" style="color: #7E7E7E; vertical-align: middle;">
+            <td class="" style="border-bottom: 1px solid #DEDEDE; font-size: 14px; padding: 10px;"></td>
+            <td style="border-bottom: 1px solid #DEDEDE; font-size: 14px; padding: 10px;">date</td>
+            <td class="" style="border-bottom: 1px solid #DEDEDE; font-size: 14px; padding: 10px;"><span class="noWrap"
+                                                                                                         style="white-space: nowrap;">depart -</span>
+                arrive
+            </td>
+            <td style="border-bottom: 1px solid #DEDEDE; font-size: 14px; padding: 10px;">class/model</td>
+            <td style="border-bottom: 1px solid #DEDEDE; font-size: 14px; padding: 10px;">price (full / <span
+                    class="noWrap" style="white-space: nowrap;"><span class="non-mobile" style=""> half /</span> share)</span>
+            </td>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td class="" style="border-bottom: 1px solid #DEDEDE; font-size: 14px; padding: 10px;"><img width="66"
+                                                                                                        alt="Gulfstream G200 (Super Mid)"
+                                                                                                        src="https://d3k81ch9hvuctc.cloudfront.net/company/SZYCZY/images/8b027ab7-6734-4e5d-b8c3-3033a02624f2.jpeg"
+                                                                                                        style="height: 50px; object-fit: cover; width: 66px;">
+            </td>
+            <td class="" width="auto" style="border-bottom: 1px solid #DEDEDE; font-size: 14px; padding: 10px;"><span
+                    class="noWrap" style="white-space: nowrap;"><span class="non-mobile"
+                                                                      style="">Tue, </span>5/9 -</span> <span
+                    class="noWrap" style="white-space: nowrap;"><span class="non-mobile"
+                                                                      style="">Wed, </span>5/10</span></td>
+            <td style="border-bottom: 1px solid #DEDEDE; font-size: 14px; padding: 10px;"><span class="noWrap"
+                                                                                                style="white-space: nowrap;">KPWK -</span>
+                MYNN
+            </td>
+            <td style="border-bottom: 1px solid #DEDEDE; font-size: 14px; padding: 10px;">Gulfstream G200 (Super Mid)
+            </td>
+            <td width="auto" style="border-bottom: 1px solid #DEDEDE; font-size: 14px; padding: 10px;"><span
+                    class=""><span class="noWrap" style="white-space: nowrap;">$19,000 /</span> <span class="noWrap"
+                                                                                                      style="white-space: nowrap;"><span
+                    class="non-mobile" style="">$9,500 / </span>$2,111</span><span class="d-none"
+                                                                                   style="display: none;">(9)</span></span><br>
+                <div class="d-none" style="display: none;">-</div>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+    <table class="direction-header bg-color-black"
+           style="background: #000000; border-radius: 10px; font-size: 14px; padding: 15px 15px; width: 100%;">
+        <tbody>
+        <tr>
+            <td class=""><span class="color-white uppercase"
+                               style="color: #FFFFFF; text-transform: uppercase;">Chicago</span></td>
+            <td width="100%">
+                <table class="flex path ph-25" style="padding-left: 25px; padding-right: 25px; width: 100%;">
+                    <tbody>
+                    <tr>
+                        <td><span class="dot border-color-white"
+                                  style="border-color: #FFFFFF; border-radius: 50%; border-style: solid; border-width: 1px; display: inline-block; height: 11px; width: 11px;"></span>
+                        </td>
+                        <td width="50%">
+                            <div class="flex line-dotted" style="border: 1px dashed #545454;"></div>
+                        </td>
+                        <td><img width="18px" height="18px"
+                                 src="https://d3k81ch9hvuctc.cloudfront.net/company/SZYCZY/images/5da1beec-f817-4a40-83b5-02212ed87fb0.png">
+                        </td>
+                        <td width="50%">
+                            <div class="flex line-dotted" style="border: 1px dashed #545454;"></div>
+                        </td>
+                        <td><span class="dot border-color-white bg-color-white"
+                                  style="background: #FFFFFF; border-color: #FFFFFF; border-radius: 50%; border-style: solid; border-width: 1px; display: inline-block; height: 11px; width: 11px;"></span>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </td>
+            <td class=""><span class="color-white uppercase" style="color: #FFFFFF; text-transform: uppercase;">North Carolina</span>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+    <table class="main-table mb-25" cellpadding="0" cellspacing="0" style="margin-bottom: 25px; width: 100%;">
+        <thead style="height: 44px;">
+        <tr class="va-m color-gray" style="color: #7E7E7E; vertical-align: middle;">
+            <td class="" style="border-bottom: 1px solid #DEDEDE; font-size: 14px; padding: 10px;"></td>
+            <td style="border-bottom: 1px solid #DEDEDE; font-size: 14px; padding: 10px;">date</td>
+            <td class="" style="border-bottom: 1px solid #DEDEDE; font-size: 14px; padding: 10px;"><span class="noWrap"
+                                                                                                         style="white-space: nowrap;">depart -</span>
+                arrive
+            </td>
+            <td style="border-bottom: 1px solid #DEDEDE; font-size: 14px; padding: 10px;">class/model</td>
+            <td style="border-bottom: 1px solid #DEDEDE; font-size: 14px; padding: 10px;">price (full / <span
+                    class="noWrap" style="white-space: nowrap;"><span class="non-mobile" style=""> half /</span> share)</span>
+            </td>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td class="" style="border-bottom: 1px solid #DEDEDE; font-size: 14px; padding: 10px;"><img width="66"
+                                                                                                        alt="Lear 45 (Midsize)"
+                                                                                                        src="https://d3k81ch9hvuctc.cloudfront.net/company/SZYCZY/images/64320ab3-617c-4b86-af2e-dcd3ca079213.jpeg"
+                                                                                                        style="height: 50px; object-fit: cover; width: 66px;">
+            </td>
+            <td class="" width="auto" style="border-bottom: 1px solid #DEDEDE; font-size: 14px; padding: 10px;"><span
+                    class="noWrap" style="white-space: nowrap;"><span class="non-mobile"
+                                                                      style="">Mon, </span>5/8 -</span> <span
+                    class="noWrap" style="white-space: nowrap;"><span class="non-mobile" style="">Tue, </span>5/9</span>
+            </td>
+            <td style="border-bottom: 1px solid #DEDEDE; font-size: 14px; padding: 10px;"><span class="noWrap"
+                                                                                                style="white-space: nowrap;">KGSO -</span>
+                KPWK
+            </td>
+            <td style="border-bottom: 1px solid #DEDEDE; font-size: 14px; padding: 10px;">Lear 45 (Midsize)</td>
+            <td width="auto" style="border-bottom: 1px solid #DEDEDE; font-size: 14px; padding: 10px;"><span
+                    class=""><span class="noWrap" style="white-space: nowrap;">$11,750 /</span> <span class="noWrap"
+                                                                                                      style="white-space: nowrap;"><span
+                    class="non-mobile" style="">$5,875 / </span>$2,350</span><span class="d-none"
+                                                                                   style="display: none;">(8)</span></span><br>
+                <div class="d-none" style="display: none;">-</div>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+    <table id="indiana" class="state-header" style="font-size: 20px; padding: 15px 15px;">
         <tbody>
         <tr>
             <td class="noWrap" style="white-space: nowrap;"><span class="uppercase" style="text-transform: uppercase;">Indiana</span>
@@ -776,7 +1330,81 @@
         </tr>
         </tbody>
     </table>
-    <table id="michigan" class="state-header" style="font-size: 20px; margin-bottom: 10px; padding: 15px 15px;">
+    <table class="direction-header bg-color-black"
+           style="background: #000000; border-radius: 10px; font-size: 14px; padding: 15px 15px; width: 100%;">
+        <tbody>
+        <tr>
+            <td class=""><span class="color-white uppercase"
+                               style="color: #FFFFFF; text-transform: uppercase;">Indiana</span></td>
+            <td width="100%">
+                <table class="flex path ph-25" style="padding-left: 25px; padding-right: 25px; width: 100%;">
+                    <tbody>
+                    <tr>
+                        <td><span class="dot border-color-white"
+                                  style="border-color: #FFFFFF; border-radius: 50%; border-style: solid; border-width: 1px; display: inline-block; height: 11px; width: 11px;"></span>
+                        </td>
+                        <td width="50%">
+                            <div class="flex line-dotted" style="border: 1px dashed #545454;"></div>
+                        </td>
+                        <td><img width="18px" height="18px"
+                                 src="https://d3k81ch9hvuctc.cloudfront.net/company/SZYCZY/images/5da1beec-f817-4a40-83b5-02212ed87fb0.png">
+                        </td>
+                        <td width="50%">
+                            <div class="flex line-dotted" style="border: 1px dashed #545454;"></div>
+                        </td>
+                        <td><span class="dot border-color-white bg-color-white"
+                                  style="background: #FFFFFF; border-color: #FFFFFF; border-radius: 50%; border-style: solid; border-width: 1px; display: inline-block; height: 11px; width: 11px;"></span>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </td>
+            <td class=""><span class="color-white uppercase"
+                               style="color: #FFFFFF; text-transform: uppercase;">New York</span></td>
+        </tr>
+        </tbody>
+    </table>
+    <table class="main-table mb-25" cellpadding="0" cellspacing="0" style="margin-bottom: 25px; width: 100%;">
+        <thead style="height: 44px;">
+        <tr class="va-m color-gray" style="color: #7E7E7E; vertical-align: middle;">
+            <td class="" style="border-bottom: 1px solid #DEDEDE; font-size: 14px; padding: 10px;"></td>
+            <td style="border-bottom: 1px solid #DEDEDE; font-size: 14px; padding: 10px;">date</td>
+            <td class="" style="border-bottom: 1px solid #DEDEDE; font-size: 14px; padding: 10px;"><span class="noWrap"
+                                                                                                         style="white-space: nowrap;">depart -</span>
+                arrive
+            </td>
+            <td style="border-bottom: 1px solid #DEDEDE; font-size: 14px; padding: 10px;">class/model</td>
+            <td style="border-bottom: 1px solid #DEDEDE; font-size: 14px; padding: 10px;">price (full / <span
+                    class="noWrap" style="white-space: nowrap;"><span class="non-mobile" style=""> half /</span> share)</span>
+            </td>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td class="" style="border-bottom: 1px solid #DEDEDE; font-size: 14px; padding: 10px;"><img width="66"
+                                                                                                        alt="Hawker 800XP (Midsize)"
+                                                                                                        src="https://d3k81ch9hvuctc.cloudfront.net/company/SZYCZY/images/e9a3124e-59fe-4bc0-a1ed-303fc860484a.jpeg"
+                                                                                                        style="height: 50px; object-fit: cover; width: 66px;">
+            </td>
+            <td class="" width="auto" style="border-bottom: 1px solid #DEDEDE; font-size: 14px; padding: 10px;"><span
+                    class="noWrap" style="white-space: nowrap;"><span class="non-mobile"
+                                                                      style="">Tue, </span>5/2 </span></td>
+            <td style="border-bottom: 1px solid #DEDEDE; font-size: 14px; padding: 10px;"><span class="noWrap"
+                                                                                                style="white-space: nowrap;">KIND -</span>
+                KTEB
+            </td>
+            <td style="border-bottom: 1px solid #DEDEDE; font-size: 14px; padding: 10px;">Hawker 800XP (Midsize)</td>
+            <td width="auto" style="border-bottom: 1px solid #DEDEDE; font-size: 14px; padding: 10px;"><span
+                    class=""><span class="noWrap" style="white-space: nowrap;">$13,000 /</span> <span class="noWrap"
+                                                                                                      style="white-space: nowrap;"><span
+                    class="non-mobile" style="">$6,500 / </span>$2,600</span><span class="d-none"
+                                                                                   style="display: none;">(8)</span></span><br>
+                <div class="d-none" style="display: none;">-</div>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+    <table id="michigan" class="state-header" style="font-size: 20px; padding: 15px 15px;">
         <tbody>
         <tr>
             <td class="noWrap" style="white-space: nowrap;"><span class="uppercase" style="text-transform: uppercase;">Michigan</span>
@@ -784,7 +1412,84 @@
         </tr>
         </tbody>
     </table>
-    <table id="newHampshire" class="state-header" style="font-size: 20px; margin-bottom: 10px; padding: 15px 15px;">
+    <table class="direction-header bg-color-black"
+           style="background: #000000; border-radius: 10px; font-size: 14px; padding: 15px 15px; width: 100%;">
+        <tbody>
+        <tr>
+            <td class=""><span class="color-white uppercase"
+                               style="color: #FFFFFF; text-transform: uppercase;">Michigan</span></td>
+            <td width="100%">
+                <table class="flex path ph-25" style="padding-left: 25px; padding-right: 25px; width: 100%;">
+                    <tbody>
+                    <tr>
+                        <td><span class="dot border-color-white"
+                                  style="border-color: #FFFFFF; border-radius: 50%; border-style: solid; border-width: 1px; display: inline-block; height: 11px; width: 11px;"></span>
+                        </td>
+                        <td width="50%">
+                            <div class="flex line-dotted" style="border: 1px dashed #545454;"></div>
+                        </td>
+                        <td><img width="18px" height="18px"
+                                 src="https://d3k81ch9hvuctc.cloudfront.net/company/SZYCZY/images/5da1beec-f817-4a40-83b5-02212ed87fb0.png">
+                        </td>
+                        <td width="50%">
+                            <div class="flex line-dotted" style="border: 1px dashed #545454;"></div>
+                        </td>
+                        <td><span class="dot border-color-white bg-color-white"
+                                  style="background: #FFFFFF; border-color: #FFFFFF; border-radius: 50%; border-style: solid; border-width: 1px; display: inline-block; height: 11px; width: 11px;"></span>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </td>
+            <td class=""><span class="color-white uppercase"
+                               style="color: #FFFFFF; text-transform: uppercase;">New York</span></td>
+        </tr>
+        </tbody>
+    </table>
+    <table class="main-table mb-25" cellpadding="0" cellspacing="0" style="margin-bottom: 25px; width: 100%;">
+        <thead style="height: 44px;">
+        <tr class="va-m color-gray" style="color: #7E7E7E; vertical-align: middle;">
+            <td class="" style="border-bottom: 1px solid #DEDEDE; font-size: 14px; padding: 10px;"></td>
+            <td style="border-bottom: 1px solid #DEDEDE; font-size: 14px; padding: 10px;">date</td>
+            <td class="" style="border-bottom: 1px solid #DEDEDE; font-size: 14px; padding: 10px;"><span class="noWrap"
+                                                                                                         style="white-space: nowrap;">depart -</span>
+                arrive
+            </td>
+            <td style="border-bottom: 1px solid #DEDEDE; font-size: 14px; padding: 10px;">class/model</td>
+            <td style="border-bottom: 1px solid #DEDEDE; font-size: 14px; padding: 10px;">price (full / <span
+                    class="noWrap" style="white-space: nowrap;"><span class="non-mobile" style=""> half /</span> share)</span>
+            </td>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td class="" style="border-bottom: 1px solid #DEDEDE; font-size: 14px; padding: 10px;"><img width="66"
+                                                                                                        alt="Gulfstream G200 (Super Mid)"
+                                                                                                        src="https://d3k81ch9hvuctc.cloudfront.net/company/SZYCZY/images/8b027ab7-6734-4e5d-b8c3-3033a02624f2.jpeg"
+                                                                                                        style="height: 50px; object-fit: cover; width: 66px;">
+            </td>
+            <td class="" width="auto" style="border-bottom: 1px solid #DEDEDE; font-size: 14px; padding: 10px;"><span
+                    class="noWrap" style="white-space: nowrap;"><span class="non-mobile"
+                                                                      style="">Sat, </span>5/6 -</span> <span
+                    class="noWrap" style="white-space: nowrap;"><span class="non-mobile" style="">Sun, </span>5/7</span>
+            </td>
+            <td style="border-bottom: 1px solid #DEDEDE; font-size: 14px; padding: 10px;"><span class="noWrap"
+                                                                                                style="white-space: nowrap;">KBTL -</span>
+                KHPN
+            </td>
+            <td style="border-bottom: 1px solid #DEDEDE; font-size: 14px; padding: 10px;">Gulfstream G200 (Super Mid)
+            </td>
+            <td width="auto" style="border-bottom: 1px solid #DEDEDE; font-size: 14px; padding: 10px;"><span
+                    class=""><span class="noWrap" style="white-space: nowrap;">$16,000 /</span> <span class="noWrap"
+                                                                                                      style="white-space: nowrap;"><span
+                    class="non-mobile" style="">$8,000 / </span>$1,778</span><span class="d-none"
+                                                                                   style="display: none;">(9)</span></span><br>
+                <div class="d-none" style="display: none;">-</div>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+    <table id="newHampshire" class="state-header" style="font-size: 20px; padding: 15px 15px;">
         <tbody>
         <tr>
             <td class="noWrap" style="white-space: nowrap;"><span class="uppercase" style="text-transform: uppercase;">New Hampshire</span>
@@ -792,7 +1497,81 @@
         </tr>
         </tbody>
     </table>
-    <table id="nevada" class="state-header" style="font-size: 20px; margin-bottom: 10px; padding: 15px 15px;">
+    <table class="direction-header bg-color-black"
+           style="background: #000000; border-radius: 10px; font-size: 14px; padding: 15px 15px; width: 100%;">
+        <tbody>
+        <tr>
+            <td class=""><span class="color-white uppercase" style="color: #FFFFFF; text-transform: uppercase;">Lebanon, New Hampshire</span>
+            </td>
+            <td width="100%">
+                <table class="flex path ph-25" style="padding-left: 25px; padding-right: 25px; width: 100%;">
+                    <tbody>
+                    <tr>
+                        <td><span class="dot border-color-white"
+                                  style="border-color: #FFFFFF; border-radius: 50%; border-style: solid; border-width: 1px; display: inline-block; height: 11px; width: 11px;"></span>
+                        </td>
+                        <td width="50%">
+                            <div class="flex line-dotted" style="border: 1px dashed #545454;"></div>
+                        </td>
+                        <td><img width="18px" height="18px"
+                                 src="https://d3k81ch9hvuctc.cloudfront.net/company/SZYCZY/images/5da1beec-f817-4a40-83b5-02212ed87fb0.png">
+                        </td>
+                        <td width="50%">
+                            <div class="flex line-dotted" style="border: 1px dashed #545454;"></div>
+                        </td>
+                        <td><span class="dot border-color-white bg-color-white"
+                                  style="background: #FFFFFF; border-color: #FFFFFF; border-radius: 50%; border-style: solid; border-width: 1px; display: inline-block; height: 11px; width: 11px;"></span>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </td>
+            <td class=""><span class="color-white uppercase" style="color: #FFFFFF; text-transform: uppercase;">Janesville, Wisconsin</span>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+    <table class="main-table mb-25" cellpadding="0" cellspacing="0" style="margin-bottom: 25px; width: 100%;">
+        <thead style="height: 44px;">
+        <tr class="va-m color-gray" style="color: #7E7E7E; vertical-align: middle;">
+            <td class="" style="border-bottom: 1px solid #DEDEDE; font-size: 14px; padding: 10px;"></td>
+            <td style="border-bottom: 1px solid #DEDEDE; font-size: 14px; padding: 10px;">date</td>
+            <td class="" style="border-bottom: 1px solid #DEDEDE; font-size: 14px; padding: 10px;"><span class="noWrap"
+                                                                                                         style="white-space: nowrap;">depart -</span>
+                arrive
+            </td>
+            <td style="border-bottom: 1px solid #DEDEDE; font-size: 14px; padding: 10px;">class/model</td>
+            <td style="border-bottom: 1px solid #DEDEDE; font-size: 14px; padding: 10px;">price (full / <span
+                    class="noWrap" style="white-space: nowrap;"><span class="non-mobile" style=""> half /</span> share)</span>
+            </td>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td class="" style="border-bottom: 1px solid #DEDEDE; font-size: 14px; padding: 10px;"><img width="66"
+                                                                                                        alt="Hawker 800XP (Midsize)"
+                                                                                                        src="https://d3k81ch9hvuctc.cloudfront.net/company/SZYCZY/images/e9a3124e-59fe-4bc0-a1ed-303fc860484a.jpeg"
+                                                                                                        style="height: 50px; object-fit: cover; width: 66px;">
+            </td>
+            <td class="" width="auto" style="border-bottom: 1px solid #DEDEDE; font-size: 14px; padding: 10px;"><span
+                    class="noWrap" style="white-space: nowrap;"><span class="non-mobile"
+                                                                      style="">Wed, </span>5/10 </span></td>
+            <td style="border-bottom: 1px solid #DEDEDE; font-size: 14px; padding: 10px;"><span class="noWrap"
+                                                                                                style="white-space: nowrap;">KLEB -</span>
+                KJVL
+            </td>
+            <td style="border-bottom: 1px solid #DEDEDE; font-size: 14px; padding: 10px;">Hawker 800XP (Midsize)</td>
+            <td width="auto" style="border-bottom: 1px solid #DEDEDE; font-size: 14px; padding: 10px;"><span
+                    class=""><span class="noWrap" style="white-space: nowrap;">$11,000 /</span> <span class="noWrap"
+                                                                                                      style="white-space: nowrap;"><span
+                    class="non-mobile" style="">$5,500 / </span>$2,200</span><span class="d-none"
+                                                                                   style="display: none;">(8)</span></span><br>
+                <div class="d-none" style="display: none;">-</div>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+    <table id="nevada" class="state-header" style="font-size: 20px; padding: 15px 15px;">
         <tbody>
         <tr>
             <td class="noWrap" style="white-space: nowrap;"><span class="uppercase" style="text-transform: uppercase;">Nevada</span>
@@ -800,7 +1579,81 @@
         </tr>
         </tbody>
     </table>
-    <table id="ohio" class="state-header" style="font-size: 20px; margin-bottom: 10px; padding: 15px 15px;">
+    <table class="direction-header bg-color-black"
+           style="background: #000000; border-radius: 10px; font-size: 14px; padding: 15px 15px; width: 100%;">
+        <tbody>
+        <tr>
+            <td class=""><span class="color-white uppercase" style="color: #FFFFFF; text-transform: uppercase;">Las Vegas</span>
+            </td>
+            <td width="100%">
+                <table class="flex path ph-25" style="padding-left: 25px; padding-right: 25px; width: 100%;">
+                    <tbody>
+                    <tr>
+                        <td><span class="dot border-color-white"
+                                  style="border-color: #FFFFFF; border-radius: 50%; border-style: solid; border-width: 1px; display: inline-block; height: 11px; width: 11px;"></span>
+                        </td>
+                        <td width="50%">
+                            <div class="flex line-dotted" style="border: 1px dashed #545454;"></div>
+                        </td>
+                        <td><img width="18px" height="18px"
+                                 src="https://d3k81ch9hvuctc.cloudfront.net/company/SZYCZY/images/5da1beec-f817-4a40-83b5-02212ed87fb0.png">
+                        </td>
+                        <td width="50%">
+                            <div class="flex line-dotted" style="border: 1px dashed #545454;"></div>
+                        </td>
+                        <td><span class="dot border-color-white bg-color-white"
+                                  style="background: #FFFFFF; border-color: #FFFFFF; border-radius: 50%; border-style: solid; border-width: 1px; display: inline-block; height: 11px; width: 11px;"></span>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </td>
+            <td class=""><span class="color-white uppercase"
+                               style="color: #FFFFFF; text-transform: uppercase;">New York</span></td>
+        </tr>
+        </tbody>
+    </table>
+    <table class="main-table mb-25" cellpadding="0" cellspacing="0" style="margin-bottom: 25px; width: 100%;">
+        <thead style="height: 44px;">
+        <tr class="va-m color-gray" style="color: #7E7E7E; vertical-align: middle;">
+            <td class="" style="border-bottom: 1px solid #DEDEDE; font-size: 14px; padding: 10px;"></td>
+            <td style="border-bottom: 1px solid #DEDEDE; font-size: 14px; padding: 10px;">date</td>
+            <td class="" style="border-bottom: 1px solid #DEDEDE; font-size: 14px; padding: 10px;"><span class="noWrap"
+                                                                                                         style="white-space: nowrap;">depart -</span>
+                arrive
+            </td>
+            <td style="border-bottom: 1px solid #DEDEDE; font-size: 14px; padding: 10px;">class/model</td>
+            <td style="border-bottom: 1px solid #DEDEDE; font-size: 14px; padding: 10px;">price (full / <span
+                    class="noWrap" style="white-space: nowrap;"><span class="non-mobile" style=""> half /</span> share)</span>
+            </td>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td class="" style="border-bottom: 1px solid #DEDEDE; font-size: 14px; padding: 10px;"><img width="66"
+                                                                                                        alt="Citation X (Super Mid)"
+                                                                                                        src="https://d3k81ch9hvuctc.cloudfront.net/company/SZYCZY/images/54da26f1-5086-4cad-9d05-f5338d199f5c.jpeg"
+                                                                                                        style="height: 50px; object-fit: cover; width: 66px;">
+            </td>
+            <td class="" width="auto" style="border-bottom: 1px solid #DEDEDE; font-size: 14px; padding: 10px;"><span
+                    class="noWrap" style="white-space: nowrap;"><span class="non-mobile"
+                                                                      style="">Wed, </span>5/3 </span></td>
+            <td style="border-bottom: 1px solid #DEDEDE; font-size: 14px; padding: 10px;"><span class="noWrap"
+                                                                                                style="white-space: nowrap;">KHSH -</span>
+                KTEB
+            </td>
+            <td style="border-bottom: 1px solid #DEDEDE; font-size: 14px; padding: 10px;">Citation X (Super Mid)</td>
+            <td width="auto" style="border-bottom: 1px solid #DEDEDE; font-size: 14px; padding: 10px;"><span
+                    class=""><span class="noWrap" style="white-space: nowrap;">- /</span> <span class="noWrap"
+                                                                                                style="white-space: nowrap;"><span
+                    class="non-mobile" style="">- / </span>$3,250</span><span class="d-none"
+                                                                              style="display: none;">(8)</span></span><br>
+                <div class="d-none" style="display: none;">-</div>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+    <table id="ohio" class="state-header" style="font-size: 20px; padding: 15px 15px;">
         <tbody>
         <tr>
             <td class="noWrap" style="white-space: nowrap;"><span class="uppercase" style="text-transform: uppercase;">Ohio</span>
@@ -808,7 +1661,83 @@
         </tr>
         </tbody>
     </table>
-    <table id="wisconsin" class="state-header" style="font-size: 20px; margin-bottom: 10px; padding: 15px 15px;">
+    <table class="direction-header bg-color-black"
+           style="background: #000000; border-radius: 10px; font-size: 14px; padding: 15px 15px; width: 100%;">
+        <tbody>
+        <tr>
+            <td class=""><span class="color-white uppercase"
+                               style="color: #FFFFFF; text-transform: uppercase;">Ohio</span></td>
+            <td width="100%">
+                <table class="flex path ph-25" style="padding-left: 25px; padding-right: 25px; width: 100%;">
+                    <tbody>
+                    <tr>
+                        <td><span class="dot border-color-white"
+                                  style="border-color: #FFFFFF; border-radius: 50%; border-style: solid; border-width: 1px; display: inline-block; height: 11px; width: 11px;"></span>
+                        </td>
+                        <td width="50%">
+                            <div class="flex line-dotted" style="border: 1px dashed #545454;"></div>
+                        </td>
+                        <td><img width="18px" height="18px"
+                                 src="https://d3k81ch9hvuctc.cloudfront.net/company/SZYCZY/images/5da1beec-f817-4a40-83b5-02212ed87fb0.png">
+                        </td>
+                        <td width="50%">
+                            <div class="flex line-dotted" style="border: 1px dashed #545454;"></div>
+                        </td>
+                        <td><span class="dot border-color-white bg-color-white"
+                                  style="background: #FFFFFF; border-color: #FFFFFF; border-radius: 50%; border-style: solid; border-width: 1px; display: inline-block; height: 11px; width: 11px;"></span>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </td>
+            <td class=""><span class="color-white uppercase"
+                               style="color: #FFFFFF; text-transform: uppercase;">New York</span></td>
+        </tr>
+        </tbody>
+    </table>
+    <table class="main-table mb-25" cellpadding="0" cellspacing="0" style="margin-bottom: 25px; width: 100%;">
+        <thead style="height: 44px;">
+        <tr class="va-m color-gray" style="color: #7E7E7E; vertical-align: middle;">
+            <td class="" style="border-bottom: 1px solid #DEDEDE; font-size: 14px; padding: 10px;"></td>
+            <td style="border-bottom: 1px solid #DEDEDE; font-size: 14px; padding: 10px;">date</td>
+            <td class="" style="border-bottom: 1px solid #DEDEDE; font-size: 14px; padding: 10px;"><span class="noWrap"
+                                                                                                         style="white-space: nowrap;">depart -</span>
+                arrive
+            </td>
+            <td style="border-bottom: 1px solid #DEDEDE; font-size: 14px; padding: 10px;">class/model</td>
+            <td style="border-bottom: 1px solid #DEDEDE; font-size: 14px; padding: 10px;">price (full / <span
+                    class="noWrap" style="white-space: nowrap;"><span class="non-mobile" style=""> half /</span> share)</span>
+            </td>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td class="" style="border-bottom: 1px solid #DEDEDE; font-size: 14px; padding: 10px;"><img width="66"
+                                                                                                        alt="Hawker 800XP (Midsize)"
+                                                                                                        src="https://d3k81ch9hvuctc.cloudfront.net/company/SZYCZY/images/e9a3124e-59fe-4bc0-a1ed-303fc860484a.jpeg"
+                                                                                                        style="height: 50px; object-fit: cover; width: 66px;">
+            </td>
+            <td class="" width="auto" style="border-bottom: 1px solid #DEDEDE; font-size: 14px; padding: 10px;"><span
+                    class="noWrap" style="white-space: nowrap;"><span class="non-mobile"
+                                                                      style="">Mon, </span>5/8 -</span> <span
+                    class="noWrap" style="white-space: nowrap;"><span class="non-mobile" style="">Tue, </span>5/9</span>
+            </td>
+            <td style="border-bottom: 1px solid #DEDEDE; font-size: 14px; padding: 10px;"><span class="noWrap"
+                                                                                                style="white-space: nowrap;">KLUK -</span>
+                KTEB
+            </td>
+            <td style="border-bottom: 1px solid #DEDEDE; font-size: 14px; padding: 10px;">Hawker 800XP (Midsize)</td>
+            <td width="auto" style="border-bottom: 1px solid #DEDEDE; font-size: 14px; padding: 10px;"><span
+                    class=""><span class="noWrap" style="white-space: nowrap;">$11,000 /</span> <span class="noWrap"
+                                                                                                      style="white-space: nowrap;"><span
+                    class="non-mobile" style="">$5,500 / </span>$2,200</span><span class="d-none"
+                                                                                   style="display: none;">(8)</span></span><br>
+                <div class="d-none" style="display: none;">-</div>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+    <table id="wisconsin" class="state-header" style="font-size: 20px; padding: 15px 15px;">
         <tbody>
         <tr>
             <td class="noWrap" style="white-space: nowrap;"><span class="uppercase" style="text-transform: uppercase;">Wisconsin</span>
@@ -816,6 +1745,357 @@
         </tr>
         </tbody>
     </table>
+    <table class="direction-header bg-color-black"
+           style="background: #000000; border-radius: 10px; font-size: 14px; padding: 15px 15px; width: 100%;">
+        <tbody>
+        <tr>
+            <td class=""><span class="color-white uppercase" style="color: #FFFFFF; text-transform: uppercase;">Janesville, Wisconsin</span>
+            </td>
+            <td width="100%">
+                <table class="flex path ph-25" style="padding-left: 25px; padding-right: 25px; width: 100%;">
+                    <tbody>
+                    <tr>
+                        <td><span class="dot border-color-white"
+                                  style="border-color: #FFFFFF; border-radius: 50%; border-style: solid; border-width: 1px; display: inline-block; height: 11px; width: 11px;"></span>
+                        </td>
+                        <td width="50%">
+                            <div class="flex line-dotted" style="border: 1px dashed #545454;"></div>
+                        </td>
+                        <td><img width="18px" height="18px"
+                                 src="https://d3k81ch9hvuctc.cloudfront.net/company/SZYCZY/images/5da1beec-f817-4a40-83b5-02212ed87fb0.png">
+                        </td>
+                        <td width="50%">
+                            <div class="flex line-dotted" style="border: 1px dashed #545454;"></div>
+                        </td>
+                        <td><span class="dot border-color-white bg-color-white"
+                                  style="background: #FFFFFF; border-color: #FFFFFF; border-radius: 50%; border-style: solid; border-width: 1px; display: inline-block; height: 11px; width: 11px;"></span>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </td>
+            <td class=""><span class="color-white uppercase"
+                               style="color: #FFFFFF; text-transform: uppercase;">Florida</span></td>
+        </tr>
+        </tbody>
+    </table>
+    <table class="main-table mb-25" cellpadding="0" cellspacing="0" style="margin-bottom: 25px; width: 100%;">
+        <thead style="height: 44px;">
+        <tr class="va-m color-gray" style="color: #7E7E7E; vertical-align: middle;">
+            <td class="" style="border-bottom: 1px solid #DEDEDE; font-size: 14px; padding: 10px;"></td>
+            <td style="border-bottom: 1px solid #DEDEDE; font-size: 14px; padding: 10px;">date</td>
+            <td class="" style="border-bottom: 1px solid #DEDEDE; font-size: 14px; padding: 10px;"><span class="noWrap"
+                                                                                                         style="white-space: nowrap;">depart -</span>
+                arrive
+            </td>
+            <td style="border-bottom: 1px solid #DEDEDE; font-size: 14px; padding: 10px;">class/model</td>
+            <td style="border-bottom: 1px solid #DEDEDE; font-size: 14px; padding: 10px;">price (full / <span
+                    class="noWrap" style="white-space: nowrap;"><span class="non-mobile" style=""> half /</span> share)</span>
+            </td>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td class="" style="border-bottom: 1px solid #DEDEDE; font-size: 14px; padding: 10px;"><img width="66"
+                                                                                                        alt="Hawker 850XP (Midsize)"
+                                                                                                        src="https://d3k81ch9hvuctc.cloudfront.net/company/SZYCZY/images/94974887-ff32-47c3-bcf8-e99bad8b165d.jpeg"
+                                                                                                        style="height: 50px; object-fit: cover; width: 66px;">
+            </td>
+            <td class="" width="auto" style="border-bottom: 1px solid #DEDEDE; font-size: 14px; padding: 10px;"><span
+                    class="noWrap" style="white-space: nowrap;"><span class="non-mobile"
+                                                                      style="">Fri, </span>5/12 -</span> <span
+                    class="noWrap" style="white-space: nowrap;"><span class="non-mobile"
+                                                                      style="">Sat, </span>5/13</span></td>
+            <td style="border-bottom: 1px solid #DEDEDE; font-size: 14px; padding: 10px;"><span class="noWrap"
+                                                                                                style="white-space: nowrap;">KJVL -</span>
+                KSUA
+            </td>
+            <td style="border-bottom: 1px solid #DEDEDE; font-size: 14px; padding: 10px;">Hawker 850XP (Midsize)</td>
+            <td width="auto" style="border-bottom: 1px solid #DEDEDE; font-size: 14px; padding: 10px;"><span
+                    class=""><span class="noWrap" style="white-space: nowrap;">$15,500 /</span> <span class="noWrap"
+                                                                                                      style="white-space: nowrap;"><span
+                    class="non-mobile" style="">$7,750 / </span>$3,100</span><span class="d-none"
+                                                                                   style="display: none;">(8)</span></span><br>
+                <div class="d-none" style="display: none;">-</div>
+            </td>
+        </tr>
+        <tr>
+            <td class="" style="border-bottom: 1px solid #DEDEDE; font-size: 14px; padding: 10px;"><img width="66"
+                                                                                                        alt="Hawker 750 (Midsize)"
+                                                                                                        src="https://d3k81ch9hvuctc.cloudfront.net/company/SZYCZY/images/c65cc16f-c58f-4893-890d-0cd5e9f1349f.png"
+                                                                                                        style="height: 50px; object-fit: cover; width: 66px;">
+            </td>
+            <td class="" width="auto" style="border-bottom: 1px solid #DEDEDE; font-size: 14px; padding: 10px;"><span
+                    class="noWrap" style="white-space: nowrap;"><span class="non-mobile"
+                                                                      style="">Wed, </span>5/3 </span></td>
+            <td style="border-bottom: 1px solid #DEDEDE; font-size: 14px; padding: 10px;"><span class="noWrap"
+                                                                                                style="white-space: nowrap;">KJVL -</span>
+                KVRB
+            </td>
+            <td style="border-bottom: 1px solid #DEDEDE; font-size: 14px; padding: 10px;">Hawker 750 (Midsize)</td>
+            <td width="auto" style="border-bottom: 1px solid #DEDEDE; font-size: 14px; padding: 10px;"><span
+                    class=""><span class="noWrap" style="white-space: nowrap;">$15,500 /</span> <span class="noWrap"
+                                                                                                      style="white-space: nowrap;"><span
+                    class="non-mobile" style="">$7,750 / </span>$3,100</span><span class="d-none"
+                                                                                   style="display: none;">(8)</span></span><br>
+                <div class="d-none" style="display: none;">-</div>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+    <table class="direction-header bg-color-black"
+           style="background: #000000; border-radius: 10px; font-size: 14px; padding: 15px 15px; width: 100%;">
+        <tbody>
+        <tr>
+            <td class=""><span class="color-white uppercase" style="color: #FFFFFF; text-transform: uppercase;">Janesville, Wisconsin</span>
+            </td>
+            <td width="100%">
+                <table class="flex path ph-25" style="padding-left: 25px; padding-right: 25px; width: 100%;">
+                    <tbody>
+                    <tr>
+                        <td><span class="dot border-color-white"
+                                  style="border-color: #FFFFFF; border-radius: 50%; border-style: solid; border-width: 1px; display: inline-block; height: 11px; width: 11px;"></span>
+                        </td>
+                        <td width="50%">
+                            <div class="flex line-dotted" style="border: 1px dashed #545454;"></div>
+                        </td>
+                        <td><img width="18px" height="18px"
+                                 src="https://d3k81ch9hvuctc.cloudfront.net/company/SZYCZY/images/5da1beec-f817-4a40-83b5-02212ed87fb0.png">
+                        </td>
+                        <td width="50%">
+                            <div class="flex line-dotted" style="border: 1px dashed #545454;"></div>
+                        </td>
+                        <td><span class="dot border-color-white bg-color-white"
+                                  style="background: #FFFFFF; border-color: #FFFFFF; border-radius: 50%; border-style: solid; border-width: 1px; display: inline-block; height: 11px; width: 11px;"></span>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </td>
+            <td class=""><span class="color-white uppercase" style="color: #FFFFFF; text-transform: uppercase;">Palm Springs, California</span>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+    <table class="main-table mb-25" cellpadding="0" cellspacing="0" style="margin-bottom: 25px; width: 100%;">
+        <thead style="height: 44px;">
+        <tr class="va-m color-gray" style="color: #7E7E7E; vertical-align: middle;">
+            <td class="" style="border-bottom: 1px solid #DEDEDE; font-size: 14px; padding: 10px;"></td>
+            <td style="border-bottom: 1px solid #DEDEDE; font-size: 14px; padding: 10px;">date</td>
+            <td class="" style="border-bottom: 1px solid #DEDEDE; font-size: 14px; padding: 10px;"><span class="noWrap"
+                                                                                                         style="white-space: nowrap;">depart -</span>
+                arrive
+            </td>
+            <td style="border-bottom: 1px solid #DEDEDE; font-size: 14px; padding: 10px;">class/model</td>
+            <td style="border-bottom: 1px solid #DEDEDE; font-size: 14px; padding: 10px;">price (full / <span
+                    class="noWrap" style="white-space: nowrap;"><span class="non-mobile" style=""> half /</span> share)</span>
+            </td>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td class="" style="border-bottom: 1px solid #DEDEDE; font-size: 14px; padding: 10px;"><img width="66"
+                                                                                                        alt="Dassault Falcon 2000 (Heavy)"
+                                                                                                        src="https://d3k81ch9hvuctc.cloudfront.net/company/SZYCZY/images/06306a9e-1ce7-458b-a792-357260366fed.png"
+                                                                                                        style="height: 50px; object-fit: cover; width: 66px;">
+            </td>
+            <td class="" width="auto" style="border-bottom: 1px solid #DEDEDE; font-size: 14px; padding: 10px;"><span
+                    class="noWrap" style="white-space: nowrap;"><span class="non-mobile"
+                                                                      style="">Sun, </span>5/14 </span></td>
+            <td style="border-bottom: 1px solid #DEDEDE; font-size: 14px; padding: 10px;"><span class="noWrap"
+                                                                                                style="white-space: nowrap;">KJVL -</span>
+                KTRM
+            </td>
+            <td style="border-bottom: 1px solid #DEDEDE; font-size: 14px; padding: 10px;">Dassault Falcon 2000 (Heavy)
+            </td>
+            <td width="auto" style="border-bottom: 1px solid #DEDEDE; font-size: 14px; padding: 10px;"><span
+                    class=""><span class="noWrap" style="white-space: nowrap;">$21,000 /</span> <span class="noWrap"
+                                                                                                      style="white-space: nowrap;"><span
+                    class="non-mobile" style="">$10,500 / </span>$2,100</span><span class="d-none"
+                                                                                    style="display: none;">(10)</span></span><br>
+                <div class="d-none" style="display: none;">-</div>
+            </td>
+        </tr>
+        <tr>
+            <td class="" style="border-bottom: 1px solid #DEDEDE; font-size: 14px; padding: 10px;"><img width="66"
+                                                                                                        alt="Dassault Falcon 2000 (Heavy)"
+                                                                                                        src="https://d3k81ch9hvuctc.cloudfront.net/company/SZYCZY/images/06306a9e-1ce7-458b-a792-357260366fed.png"
+                                                                                                        style="height: 50px; object-fit: cover; width: 66px;">
+            </td>
+            <td class="" width="auto" style="border-bottom: 1px solid #DEDEDE; font-size: 14px; padding: 10px;"><span
+                    class="noWrap" style="white-space: nowrap;"><span class="non-mobile"
+                                                                      style="">Thu, </span>6/1 </span></td>
+            <td style="border-bottom: 1px solid #DEDEDE; font-size: 14px; padding: 10px;"><span class="noWrap"
+                                                                                                style="white-space: nowrap;">KJVL -</span>
+                KTRM
+            </td>
+            <td style="border-bottom: 1px solid #DEDEDE; font-size: 14px; padding: 10px;">Dassault Falcon 2000 (Heavy)
+            </td>
+            <td width="auto" style="border-bottom: 1px solid #DEDEDE; font-size: 14px; padding: 10px;"><span
+                    class=""><span class="noWrap" style="white-space: nowrap;">$28,000 /</span> <span class="noWrap"
+                                                                                                      style="white-space: nowrap;"><span
+                    class="non-mobile" style="">$14,000 / </span>$2,800</span><span class="d-none"
+                                                                                    style="display: none;">(10)</span></span><br>
+                <div class="d-none" style="display: none;">-</div>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+    <table class="direction-header bg-color-black"
+           style="background: #000000; border-radius: 10px; font-size: 14px; padding: 15px 15px; width: 100%;">
+        <tbody>
+        <tr>
+            <td class=""><span class="color-white uppercase" style="color: #FFFFFF; text-transform: uppercase;">Janesville, Wisconsin</span>
+            </td>
+            <td width="100%">
+                <table class="flex path ph-25" style="padding-left: 25px; padding-right: 25px; width: 100%;">
+                    <tbody>
+                    <tr>
+                        <td><span class="dot border-color-white"
+                                  style="border-color: #FFFFFF; border-radius: 50%; border-style: solid; border-width: 1px; display: inline-block; height: 11px; width: 11px;"></span>
+                        </td>
+                        <td width="50%">
+                            <div class="flex line-dotted" style="border: 1px dashed #545454;"></div>
+                        </td>
+                        <td><img width="18px" height="18px"
+                                 src="https://d3k81ch9hvuctc.cloudfront.net/company/SZYCZY/images/5da1beec-f817-4a40-83b5-02212ed87fb0.png">
+                        </td>
+                        <td width="50%">
+                            <div class="flex line-dotted" style="border: 1px dashed #545454;"></div>
+                        </td>
+                        <td><span class="dot border-color-white bg-color-white"
+                                  style="background: #FFFFFF; border-color: #FFFFFF; border-radius: 50%; border-style: solid; border-width: 1px; display: inline-block; height: 11px; width: 11px;"></span>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </td>
+            <td class=""><span class="color-white uppercase" style="color: #FFFFFF; text-transform: uppercase;">Dallas, Texas</span>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+    <table class="main-table mb-25" cellpadding="0" cellspacing="0" style="margin-bottom: 25px; width: 100%;">
+        <thead style="height: 44px;">
+        <tr class="va-m color-gray" style="color: #7E7E7E; vertical-align: middle;">
+            <td class="" style="border-bottom: 1px solid #DEDEDE; font-size: 14px; padding: 10px;"></td>
+            <td style="border-bottom: 1px solid #DEDEDE; font-size: 14px; padding: 10px;">date</td>
+            <td class="" style="border-bottom: 1px solid #DEDEDE; font-size: 14px; padding: 10px;"><span class="noWrap"
+                                                                                                         style="white-space: nowrap;">depart -</span>
+                arrive
+            </td>
+            <td style="border-bottom: 1px solid #DEDEDE; font-size: 14px; padding: 10px;">class/model</td>
+            <td style="border-bottom: 1px solid #DEDEDE; font-size: 14px; padding: 10px;">price (full / <span
+                    class="noWrap" style="white-space: nowrap;"><span class="non-mobile" style=""> half /</span> share)</span>
+            </td>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td class="" style="border-bottom: 1px solid #DEDEDE; font-size: 14px; padding: 10px;"><img width="66"
+                                                                                                        alt="Hawker 800XP (Midsize)"
+                                                                                                        src="https://d3k81ch9hvuctc.cloudfront.net/company/SZYCZY/images/e9a3124e-59fe-4bc0-a1ed-303fc860484a.jpeg"
+                                                                                                        style="height: 50px; object-fit: cover; width: 66px;">
+            </td>
+            <td class="" width="auto" style="border-bottom: 1px solid #DEDEDE; font-size: 14px; padding: 10px;"><span
+                    class="noWrap" style="white-space: nowrap;"><span class="non-mobile"
+                                                                      style="">Fri, </span>5/12 </span></td>
+            <td style="border-bottom: 1px solid #DEDEDE; font-size: 14px; padding: 10px;"><span class="noWrap"
+                                                                                                style="white-space: nowrap;">KJVL -</span>
+                KDAL
+            </td>
+            <td style="border-bottom: 1px solid #DEDEDE; font-size: 14px; padding: 10px;">Hawker 800XP (Midsize)</td>
+            <td width="auto" style="border-bottom: 1px solid #DEDEDE; font-size: 14px; padding: 10px;"><span
+                    class=""><span class="noWrap" style="white-space: nowrap;">$12,500 /</span> <span class="noWrap"
+                                                                                                      style="white-space: nowrap;"><span
+                    class="non-mobile" style="">$6,250 / </span>$2,500</span><span class="d-none"
+                                                                                   style="display: none;">(8)</span></span><br>
+                <div class="d-none" style="display: none;">-</div>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+    <table class="direction-header bg-color-black"
+           style="background: #000000; border-radius: 10px; font-size: 14px; padding: 15px 15px; width: 100%;">
+        <tbody>
+        <tr>
+            <td class=""><span class="color-white uppercase" style="color: #FFFFFF; text-transform: uppercase;">Janesville, Wisconsin</span>
+            </td>
+            <td width="100%">
+                <table class="flex path ph-25" style="padding-left: 25px; padding-right: 25px; width: 100%;">
+                    <tbody>
+                    <tr>
+                        <td><span class="dot border-color-white"
+                                  style="border-color: #FFFFFF; border-radius: 50%; border-style: solid; border-width: 1px; display: inline-block; height: 11px; width: 11px;"></span>
+                        </td>
+                        <td width="50%">
+                            <div class="flex line-dotted" style="border: 1px dashed #545454;"></div>
+                        </td>
+                        <td><img width="18px" height="18px"
+                                 src="https://d3k81ch9hvuctc.cloudfront.net/company/SZYCZY/images/5da1beec-f817-4a40-83b5-02212ed87fb0.png">
+                        </td>
+                        <td width="50%">
+                            <div class="flex line-dotted" style="border: 1px dashed #545454;"></div>
+                        </td>
+                        <td><span class="dot border-color-white bg-color-white"
+                                  style="background: #FFFFFF; border-color: #FFFFFF; border-radius: 50%; border-style: solid; border-width: 1px; display: inline-block; height: 11px; width: 11px;"></span>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </td>
+            <td class=""><span class="color-white uppercase" style="color: #FFFFFF; text-transform: uppercase;">Washington, DC</span>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+    <table class="main-table mb-25" cellpadding="0" cellspacing="0" style="margin-bottom: 25px; width: 100%;">
+        <thead style="height: 44px;">
+        <tr class="va-m color-gray" style="color: #7E7E7E; vertical-align: middle;">
+            <td class="" style="border-bottom: 1px solid #DEDEDE; font-size: 14px; padding: 10px;"></td>
+            <td style="border-bottom: 1px solid #DEDEDE; font-size: 14px; padding: 10px;">date</td>
+            <td class="" style="border-bottom: 1px solid #DEDEDE; font-size: 14px; padding: 10px;"><span class="noWrap"
+                                                                                                         style="white-space: nowrap;">depart -</span>
+                arrive
+            </td>
+            <td style="border-bottom: 1px solid #DEDEDE; font-size: 14px; padding: 10px;">class/model</td>
+            <td style="border-bottom: 1px solid #DEDEDE; font-size: 14px; padding: 10px;">price (full / <span
+                    class="noWrap" style="white-space: nowrap;"><span class="non-mobile" style=""> half /</span> share)</span>
+            </td>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td class="" style="border-bottom: 1px solid #DEDEDE; font-size: 14px; padding: 10px;"><img width="66"
+                                                                                                        alt="Hawker 800XP (Midsize)"
+                                                                                                        src="https://d3k81ch9hvuctc.cloudfront.net/company/SZYCZY/images/e9a3124e-59fe-4bc0-a1ed-303fc860484a.jpeg"
+                                                                                                        style="height: 50px; object-fit: cover; width: 66px;">
+            </td>
+            <td class="" width="auto" style="border-bottom: 1px solid #DEDEDE; font-size: 14px; padding: 10px;"><span
+                    class="noWrap" style="white-space: nowrap;"><span class="non-mobile"
+                                                                      style="">Wed, </span>5/17 </span></td>
+            <td style="border-bottom: 1px solid #DEDEDE; font-size: 14px; padding: 10px;"><span class="noWrap"
+                                                                                                style="white-space: nowrap;">KJVL -</span>
+                KIAD
+            </td>
+            <td style="border-bottom: 1px solid #DEDEDE; font-size: 14px; padding: 10px;">Hawker 800XP (Midsize)</td>
+            <td width="auto" style="border-bottom: 1px solid #DEDEDE; font-size: 14px; padding: 10px;"><span
+                    class=""><span class="noWrap" style="white-space: nowrap;">$11,000 /</span> <span class="noWrap"
+                                                                                                      style="white-space: nowrap;"><span
+                    class="non-mobile" style="">$5,500 / </span>$2,200</span><span class="d-none"
+                                                                                   style="display: none;">(8)</span></span><br>
+                <div class="d-none" style="display: none;">-</div>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+    <div class="centered buttons last"
+         style="display: table; margin-bottom: 90px; margin-left: auto; margin-right: auto; padding: 0 10px;">
+        <div><a href="https://flyjets.com" target="_blank"
+                class="button uppercase fs-18 fw-700 bg-color-green color-white"
+                style="background: #00C55A; border: 0; border-radius: 10px; color: #FFFFFF; display: inline-block; font-size: 18px; font-weight: 700; padding: 12px 37px; text-decoration: none; text-transform: uppercase;">Go
+            to website</a></div>
+    </div>
     <table class="bottom" style="margin-bottom: 15px; width: 100%;">
         <tbody>
         <tr>
