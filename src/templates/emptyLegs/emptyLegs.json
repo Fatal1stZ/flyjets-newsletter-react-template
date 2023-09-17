@@ -1,0 +1,444 @@
+[
+  {
+    "directions": [
+      {
+        "from": "New York",
+        "to": "Florida",
+        "flights": [
+          {
+            "dateRange": {
+              "start": "2023-05-15",
+              "end": ""
+            },
+            "departure": "KSWF",
+            "arrival": "KPBI",
+            "aircraft": "Hawker 800XP (Midsize)",
+            "price": {
+              "full": 12900,
+              "half": 6450,
+              "shared": 2580
+            },
+            "numberOfSeatsAvailable": 7,
+            "numberOfSeatsReserved": 0
+          },
+          {
+            "dateRange": {
+              "start": "2023-05-18",
+              "end": ""
+            },
+            "departure": "KROC",
+            "arrival": "KAPF",
+            "aircraft": "Phenom 300 (VLJ)",
+            "price": {
+              "full": 14000,
+              "half": 7000,
+              "shared": 2800
+            },
+            "numberOfSeatsAvailable": 8,
+            "numberOfSeatsReserved": 0
+          },
+          {
+            "dateRange": {
+              "start": "2023-05-19",
+              "end": ""
+            },
+            "departure": "KFRG",
+            "arrival": "KFXE",
+            "aircraft": "Learjet 60 (Midsize)",
+            "price": {
+              "full": 12500,
+              "half": 6250,
+              "shared": 2500
+            },
+            "numberOfSeatsAvailable": 7,
+            "numberOfSeatsReserved": 0
+          },
+          {
+            "dateRange": {
+              "start": "2023-05-26",
+              "end": ""
+            },
+            "departure": "KTEB",
+            "arrival": "KFXE",
+            "aircraft": "Challenger 350 (Super Mid)",
+            "price": {
+              "full": 17500,
+              "half": 8750,
+              "shared": 2188
+            },
+            "numberOfSeatsAvailable": 9,
+            "numberOfSeatsReserved": 0
+          }
+        ]
+      },
+      {
+        "from": "New York-area",
+        "to": "Martha's Vineyard",
+        "flights": [
+          {
+            "dateRange": {
+              "start": "2023-05-10",
+              "end": "2023-05-15"
+            },
+            "departure": "KHPN",
+            "arrival": "KMVY",
+            "aircraft": "Vision SF50",
+            "price": {
+              "full": 3500,
+              "half": 0,
+              "shared": 0
+            },
+            "numberOfSeatsAvailable": 4,
+            "numberOfSeatsReserved": 0
+          }
+        ]
+      }
+    ],
+    "state": "New York",
+    "shortState": "NY"
+  },
+  {
+    "directions": [
+      {
+        "from": "Atlanta",
+        "to": "Miami",
+        "flights": [
+          {
+            "dateRange": {
+              "start": "2023-05-10",
+              "end": ""
+            },
+            "departure": "KATL",
+            "arrival": "KOPF",
+            "aircraft": "Hawker 800XP (Midsize)",
+            "price": {
+              "full": 6900,
+              "half": 3450,
+              "shared": 1380
+            },
+            "numberOfSeatsAvailable": 7,
+            "numberOfSeatsReserved": 0
+          },
+          {
+            "dateRange": {
+              "start": "2023-05-10",
+              "end": "2023-05-15"
+            },
+            "departure": "KATL",
+            "arrival": "KOPF",
+            "aircraft": "Vision SF50",
+            "price": {
+              "full": 7750,
+              "half": 0,
+              "shared": 0
+            },
+            "numberOfSeatsAvailable": 4,
+            "numberOfSeatsReserved": 0
+          }
+        ]
+      }
+    ],
+    "state": "Georgia",
+    "shortState": "GA"
+  },
+  {
+    "directions": [
+      {
+        "from": "Chicago",
+        "to": "Naples, Florida",
+        "flights": [
+          {
+            "dateRange": {
+              "start": "2023-05-19",
+              "end": ""
+            },
+            "departure": "KDPA",
+            "arrival": "KAPF",
+            "aircraft": "Phenom 300 (VLJ)",
+            "price": {
+              "full": 13000,
+              "half": 6500,
+              "shared": 2600
+            },
+            "numberOfSeatsAvailable": 8,
+            "numberOfSeatsReserved": 0
+          }
+        ]
+      },
+      {
+        "from": "Chicago",
+        "to": "Bahamas",
+        "flights": [
+          {
+            "dateRange": {
+              "start": "2023-05-09",
+              "end": "2023-05-10"
+            },
+            "departure": "KPWK",
+            "arrival": "MYNN",
+            "aircraft": "Gulfstream G200 (Super Mid)",
+            "price": {
+              "full": 19000,
+              "half": 9500,
+              "shared": 2111
+            },
+            "numberOfSeatsAvailable": 9,
+            "numberOfSeatsReserved": 0
+          }
+        ]
+      }
+    ],
+    "state": "Illinois",
+    "shortState": "IL"
+  },
+  {
+    "directions": [
+      {
+        "from": "Massachusetts",
+        "to": "Naples, Florida",
+        "flights": [
+          {
+            "dateRange": {
+              "start": "2023-05-20",
+              "end": ""
+            },
+            "departure": "KHYA",
+            "arrival": "KAPF",
+            "aircraft": "Phenom 300 (VLJ)",
+            "price": {
+              "full": 14000,
+              "half": 7000,
+              "shared": 2800
+            },
+            "numberOfSeatsAvailable": 8,
+            "numberOfSeatsReserved": 0
+          }
+        ]
+      }
+    ],
+    "state": "Massachusetts",
+    "shortState": "MA"
+  },
+  {
+    "directions": [
+      {
+        "from": "New Hampshire",
+        "to": "Wisconsin",
+        "flights": [
+          {
+            "dateRange": {
+              "start": "2023-05-10",
+              "end": ""
+            },
+            "departure": "KLEB",
+            "arrival": "KJVL",
+            "aircraft": "Hawker 800XP (Midsize)",
+            "price": {
+              "full": 11000,
+              "half": 5500,
+              "shared": 2200
+            },
+            "numberOfSeatsAvailable": 8,
+            "numberOfSeatsReserved": 0
+          }
+        ]
+      }
+    ],
+    "state": "New Hampshire",
+    "shortState": "NH"
+  },
+  {
+    "directions": [
+      {
+        "from": "Ohio",
+        "to": "New York",
+        "flights": [
+          {
+            "dateRange": {
+              "start": "2023-05-09",
+              "end": ""
+            },
+            "departure": "KLUK",
+            "arrival": "KTEB",
+            "aircraft": "Hawker 800 XP (Midsize)",
+            "price": {
+              "full": 11000,
+              "half": 5500,
+              "shared": 2200
+            },
+            "numberOfSeatsAvailable": 8,
+            "numberOfSeatsReserved": 0
+          }
+        ]
+      }
+    ],
+    "state": "Ohio",
+    "shortState": "OH"
+  },
+  {
+    "directions": [
+      {
+        "from": "Vermont",
+        "to": "Naples, Florida",
+        "flights": [
+          {
+            "dateRange": {
+              "start": "2023-05-09",
+              "end": ""
+            },
+            "departure": "KEFK",
+            "arrival": "KAPF",
+            "aircraft": "Phenom 300 (VLJ)",
+            "price": {
+              "full": 13000,
+              "half": 6500,
+              "shared": 2600
+            },
+            "numberOfSeatsAvailable": 8,
+            "numberOfSeatsReserved": 0
+          }
+        ]
+      }
+    ],
+    "state": "Vermont",
+    "shortState": "VT"
+  },
+  {
+    "directions": [
+      {
+        "from": "Vermont",
+        "to": "Naples, Florida",
+        "flights": [
+          {
+            "dateRange": {
+              "start": "2023-05-15",
+              "end": ""
+            },
+            "departure": "KIAD",
+            "arrival": "KFXE",
+            "aircraft": "Hawker 800XP (Midsize)",
+            "price": {
+              "full": 10900,
+              "half": 5450,
+              "shared": 2180
+            },
+            "numberOfSeatsAvailable": 7,
+            "numberOfSeatsReserved": 0
+          }
+        ]
+      }
+    ],
+    "state": "Virginia",
+    "shortState": "VA"
+  },
+  {
+    "directions": [
+      {
+        "from": "Wisconsin",
+        "to": "Florida",
+        "flights": [
+          {
+            "dateRange": {
+              "start": "2023-05-17",
+              "end": ""
+            },
+            "departure": "KEGV",
+            "arrival": "KAPF",
+            "aircraft": "Phenom 300 (VLJ)",
+            "price": {
+              "full": 15000,
+              "half": 7500,
+              "shared": 3000
+            },
+            "numberOfSeatsAvailable": 8,
+            "numberOfSeatsReserved": 0
+          },
+          {
+            "dateRange": {
+              "start": "2023-05-12",
+              "end": "2023-05-13"
+            },
+            "departure": "KJVL",
+            "arrival": "KSUA",
+            "aircraft": "Hawker 850XP (Midsize)",
+            "price": {
+              "full": 15500,
+              "half": 7750,
+              "shared": 3100
+            },
+            "numberOfSeatsAvailable": 8,
+            "numberOfSeatsReserved": 0
+          }
+        ]
+      },
+      {
+        "from": "Wisconsin",
+        "to": "Palm Springs, California",
+        "flights": [
+          {
+            "dateRange": {
+              "start": "2023-05-14",
+              "end": ""
+            },
+            "departure": "KJVL",
+            "arrival": "KTRM",
+            "aircraft": "Dassault Falcon 2000 (Heavy)",
+            "price": {
+              "full": 21000,
+              "half": 10500,
+              "shared": 2100
+            },
+            "numberOfSeatsAvailable": 10,
+            "numberOfSeatsReserved": 0
+          }
+        ]
+      },
+      {
+        "from": "Wisconsin",
+        "to": "Texas",
+        "flights": [
+          {
+            "dateRange": {
+              "start": "2023-05-12",
+              "end": ""
+            },
+            "departure": "KJVL",
+            "arrival": "KDAL",
+            "aircraft": "Hawker 800XP (Midize)",
+            "price": {
+              "full": 12500,
+              "half": 6250,
+              "shared": 2500
+            },
+            "numberOfSeatsAvailable": 8,
+            "numberOfSeatsReserved": 0
+          }
+        ]
+      },
+      {
+        "from": "Wisconsin",
+        "to": "Washington, DC",
+        "flights": [
+          {
+            "dateRange": {
+              "start": "2023-05-17",
+              "end": ""
+            },
+            "departure": "KJVL",
+            "arrival": "KIAD",
+            "aircraft": "Hawker 800XP (Midsize)",
+            "price": {
+              "full": 11000,
+              "half": 5500,
+              "shared": 2200
+            },
+            "numberOfSeatsAvailable": 8,
+            "numberOfSeatsReserved": 0
+          }
+        ]
+      }
+    ],
+    "state": "Wisconsin",
+    "shortState": "WI"
+  }
+]

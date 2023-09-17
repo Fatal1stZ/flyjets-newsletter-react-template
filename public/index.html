@@ -2,17 +2,20 @@
         PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-    <title>FLYJETS Featured Flights (Empty Legs):  week of May 1, 2023 and beyond</title>
+    <title>FLYJETS Featured Flights (Empty Legs): week of May 9, 2023 and beyond</title>
     <meta content="only" name="color-scheme"/>
     <meta content="only" name="supported-color-schemes"/>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap"
           rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700&display=swap"
+          rel="stylesheet">
 
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700&display=swap');
 
         .body, .darkmode, .darkmode div { /* With class body on the body tag, and all elements represented here that have a background color */
             background-image: linear-gradient(#ffffff, #ffffff) !important;
@@ -26,10 +29,14 @@
             font-family: 'Roboto Condensed', Arial, sans-serif;
         }
 
+        [style*="Roboto"] {
+            font-family: 'Roboto', Arial, sans-serif;
+        }
+
         body {
             -webkit-text-size-adjust: 100%;
             -ms-text-size-adjust: 100%;
-            font-family: 'Roboto Condensed', Arial, sans-serif;
+            font-family: 'Roboto', Arial, sans-serif;
             font-size: 14px;
             margin: 0;
             padding: 0;
@@ -46,7 +53,6 @@
             padding: 0 25px;
             width: 100%;
             margin-bottom: 20px;
-            font-size: 14px;
             border-radius: 10px;
             /*display: flex;*/
             /*justify-content: space-between;*/
@@ -115,7 +121,7 @@
         }
 
         .buttons, .contacts {
-            margin-bottom: 45px;
+            /*margin-bottom: 45px;*/
             /*display: flex;*/
             /*justify-content: center;*/
         }
@@ -178,6 +184,10 @@
             border-bottom: 1px solid #DEDEDE;
         }
 
+        .br-8 {
+            border-radius: 8px;
+        }
+
         .img-logo {
             width: 100px;
             height: 50px;
@@ -196,8 +206,9 @@
             display: inline-block;
             text-decoration: none;
             border: 0;
-            padding: 12px 37px;
-            border-radius: 10px;
+            padding: 12px 30px;
+            box-sizing: border-box;
+            /*border-radius: 10px;*/
         }
 
         .flex {
@@ -208,9 +219,50 @@
             border: 1px dashed #545454;
         }
 
+        .line {
+            width: 100%;
+            height: 1px;
+        }
+
+        .w-280 {
+            width: 280px
+        }
+
+        .p0 {
+            padding: 0;
+        }
+
+        .ph-15 {
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+
         .ph-25 {
             padding-left: 25px;
             padding-right: 25px;
+        }
+
+        .pv-10 {
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+
+        .pv-15 {
+            padding-top: 15px;
+            padding-bottom: 15px;
+        }
+
+        .pv-20 {
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+
+        .mb-5 {
+            margin-bottom: 5px;
+        }
+
+        .mb-10 {
+            margin-bottom: 10px;
         }
 
         .mb-15 {
@@ -225,12 +277,52 @@
             margin-bottom: 25px;
         }
 
+        .mb-30 {
+            margin-bottom: 30px;
+        }
+
+        .mb-40 {
+            margin-bottom: 40px;
+        }
+
         .mb-45 {
             margin-bottom: 45px;
         }
 
+        .mb-80 {
+            margin-bottom: 80px;
+        }
+
         .mb-90 {
             margin-bottom: 90px;
+        }
+
+        .mt-10 {
+            margin-top: 10px;
+        }
+
+        .mt-15 {
+            margin-top: 15px;
+        }
+
+        .mt-25 {
+            margin-top: 25px;
+        }
+
+        .mt-20 {
+            margin-top: 20px;
+        }
+
+        .mt-30 {
+            margin-top: 30px;
+        }
+
+        .ml-25 {
+            margin-left: 25px;
+        }
+
+        .mr-10 {
+            margin-right: 10px;
         }
 
         .border-dotted {
@@ -258,6 +350,10 @@
             background: #F4F4F4;
         }
 
+        .bg-color-light-gray {
+            background: #E2E2E2;
+        }
+
         .bg-color-green {
             background: #00C55A;
         }
@@ -270,12 +366,28 @@
             color: #7E7E7E;
         }
 
+        .color-dark-gray {
+            color: #5E5E5E;
+        }
+
+        .color-dark-gray {
+            color: #5E5E5E;
+        }
+
         .color-black {
             color: #000000;
         }
 
+        .fs-12 {
+            font-size: 12px;
+        }
+
         .fs-14 {
             font-size: 14px;
+        }
+
+        .fs-15 {
+            font-size: 15px;
         }
 
         .fs-16 {
@@ -304,6 +416,18 @@
             font-weight: 300;
         }
 
+        .fw-400 {
+            font-weight: 400;
+        }
+
+        .fw-500 {
+            font-weight: 500;
+        }
+
+        .fw-600 {
+            font-weight: 600;
+        }
+
         .fw-700 {
             font-weight: 700;
         }
@@ -320,6 +444,10 @@
             text-transform: uppercase;
         }
 
+        .tdec-none {
+            text-decoration: none;
+        }
+
         .d-none {
             display: none;
         }
@@ -328,7 +456,11 @@
             display: table;
             margin-left: auto;
             margin-right: auto;
-            padding: 0 10px;
+            /*padding: 0 10px;*/
+        }
+
+        .ta-center {
+            text-align: center;
         }
 
         .right {
@@ -352,7 +484,7 @@
         }
 
         /* Mobile */
-        @media screen and (max-width: 620px){
+        @media screen and (max-width: 620px) {
             .main-table {
                 /*display: none;*/
             }
@@ -378,7 +510,6 @@
                 height: 80px;
                 padding: 0 15px;
                 margin-bottom: 30px;
-                font-size: 12px;
             }
 
             .featured-flights {

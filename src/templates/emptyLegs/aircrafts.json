@@ -20,6 +20,10 @@
     "aircraftImageUrl": "https://d3k81ch9hvuctc.cloudfront.net/company/SZYCZY/images/e489b833-eee9-423c-8c1d-3f0ba704b813.jpeg"
   },
   {
+    "aircraft": "Vision SF50",
+    "aircraftImageUrl": "https://d3k81ch9hvuctc.cloudfront.net/company/SZYCZY/images/e489b833-eee9-423c-8c1d-3f0ba704b813.jpeg"
+  },
+  {
     "aircraft": "Gulfstream G500 (ULR)",
     "aircraftImageUrl": "https://d3k81ch9hvuctc.cloudfront.net/company/SZYCZY/images/ef224c3e-c194-4256-828d-b8053bc91ff6.jpeg"
   },
@@ -46,5 +50,17 @@
   {
     "aircraft": "Dassault Falcon 2000 (Heavy)",
     "aircraftImageUrl": "https://d3k81ch9hvuctc.cloudfront.net/company/SZYCZY/images/06306a9e-1ce7-458b-a792-357260366fed.png"
+  },
+  {
+    "aircraft": "Phenom 300 (VLJ)",
+    "aircraftImageUrl": "https://d3k81ch9hvuctc.cloudfront.net/company/SZYCZY/images/a83a24a0-be28-4106-b86b-bc39f5156e18.jpeg"
+  },
+  {
+    "aircraft": "Challenger 350 (Super Mid)",
+    "aircraftImageUrl": "https://d3k81ch9hvuctc.cloudfront.net/company/SZYCZY/images/4d656012-d09e-4ddf-b6f0-8b982475b19f.jpeg"
+  },
+  {
+    "aircraft": "Learjet 60 (Midsize)",
+    "aircraftImageUrl": "https://d3k81ch9hvuctc.cloudfront.net/company/SZYCZY/images/5d97fcfc-4796-48ac-9508-9c2fb8fbc300.jpeg"
   }
 ]

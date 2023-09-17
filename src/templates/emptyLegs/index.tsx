@@ -1,4 +1,4 @@
-import React, { CSSProperties } from 'react';
+import React, { CSSProperties, Fragment } from 'react';
 import emptyLegs from './emptyLegs.json'
 import aircrafts from './aircrafts.json'
 
@@ -14,8 +14,8 @@ const formatter = new Intl.NumberFormat('en-US', {
   maximumFractionDigits: 0, // (causes 2500.99 to be printed as $2,501)
 });
 
-function App() {
-  return (<>
+function EmptyLegs() {
+  return (<Fragment>
     <table className="header bg-color-black">
       <tr>
         <td width="25%">
@@ -37,10 +37,10 @@ function App() {
         <td className="fs-22 fw-700 uppercase">Featured flights (empty legs)</td>
       </tr>
       <tr>
-        <td className="fs-22 fw-300 uppercase">as of May 1, 2023</td>
+        <td className="fs-22 fw-300 uppercase">as of May 9, 2023</td>
       </tr>
       <tr>
-        <td className={'fw-300'}>Listed below are upcoming empty leg opportunities for the week of May 1st grouped by
+        <td className={'fw-300'}>Listed below are upcoming empty leg opportunities for the week of May 9th grouped by
           state of origin; email us or sign in to the app to book. Happy flying!
         </td>
       </tr>
@@ -260,7 +260,7 @@ function App() {
         </td>
       </tr>
     </table>
-  </>);
+  </Fragment>);
 }
 
-export default App;
+export default EmptyLegs;

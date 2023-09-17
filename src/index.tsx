@@ -1,19 +1,20 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import ReactDOMServer from 'react-dom/server';
-import App from './App';
+// import Template from './templates/emptyLegs';
+import Template from './templates/newsletter';
 import reportWebVitals from './reportWebVitals';
+import ReactDOMServer from 'react-dom/server';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
 root.render(
   <React.StrictMode>
-    <App />
+    <Template />
   </React.StrictMode>
 );
 
-console.log(ReactDOMServer.renderToString(<App />))
+console.log(ReactDOMServer.renderToString(<Template />))
 
 
 
