@@ -4,7 +4,7 @@
 <head>
     <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-    <title>FLYJETS Featured Flights (Empty Legs): week of May 9, 2023 and beyond</title>
+    <title>FLYJETS</title>
     <meta content="only" name="color-scheme"/>
     <meta content="only" name="supported-color-schemes"/>
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -13,7 +13,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700&display=swap"
           rel="stylesheet">
 
-    <style>
+    <style type="text/css">
         @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap');
         @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700&display=swap');
 
@@ -26,7 +26,7 @@
         }
 
         [style*="Roboto Condensed"] {
-            font-family: 'Roboto Condensed', Arial, sans-serif;
+            font-family: 'Roboto Condensed', 'Roboto', Arial, sans-serif;
         }
 
         [style*="Roboto"] {
@@ -45,15 +45,13 @@
         .root {
             max-width: 600px;
             margin: auto;
-            padding: 0 5px;
         }
 
         .header {
-            height: 100px;
-            padding: 0 25px;
+            padding: 25px;
             width: 100%;
             margin-bottom: 20px;
-            border-radius: 10px;
+            /*border-radius: 10px;*/
             /*display: flex;*/
             /*justify-content: space-between;*/
             /*align-items: center;*/
@@ -146,7 +144,8 @@
             /*gap: 12px;*/
             /*justify-items: center;*/
             padding: 20px;
-            border-radius: 10px;
+            box-sizing: border-box;
+            /*border-radius: 10px;*/
         }
 
         .main-table thead {
@@ -189,8 +188,7 @@
         }
 
         .img-logo {
-            width: 100px;
-            height: 50px;
+            width: 86px;
         }
 
         .dot {
@@ -225,7 +223,11 @@
         }
 
         .w-280 {
-            width: 280px
+            width: auto
+        }
+
+        .w-100 {
+            width: 100%
         }
 
         .p0 {
@@ -325,6 +327,10 @@
             margin-right: 10px;
         }
 
+        .mr-25 {
+            margin-right: 25px;
+        }
+
         .border-dotted {
             border-style: dashed;
             border-width: 1px;
@@ -404,12 +410,10 @@
 
         .fs-24 {
             font-size: 24px;
-            line-height: 40px;
         }
 
         .fs-27 {
             font-size: 27px;
-            line-height: 44px;
         }
 
         .fw-300 {
@@ -436,8 +440,8 @@
             font-family: 'Roboto';
         }
 
-        .ff-roboto-condensed {
-            font-family: 'Roboto Condensed';
+        .ff-roboto-condensed {Roboto Condensed
+            font-family: '';
         }
 
         .uppercase {
@@ -453,7 +457,7 @@
         }
 
         .centered {
-            display: table;
+            /*display: table;*/
             margin-left: auto;
             margin-right: auto;
             /*padding: 0 10px;*/
@@ -475,32 +479,30 @@
             vertical-align: middle;
         }
 
-        .mobile {
-            /*display: none;*/
-        }
-
-        .non-mobile {
-            /*display: block;*/
+        @media only screen and (min-width: 480px) {
+            .d-mobile {
+                display: none;
+            }
         }
 
         /* Mobile */
-        @media screen and (max-width: 620px) {
+        @media only screen and (max-width: 480px) {
             .main-table {
                 /*display: none;*/
             }
 
-            .mobile {
-                /*display: block;*/
-            }
-
             .non-mobile {
-                /*display: none;*/
+                display: none;
             }
 
             .main-table td {
                 font-size: 12px;
             }
 
+            .img-logo {
+                width: 60px;
+                /*height: 30px;*/
+            }
 
             .main-table-mobile {
                 display: table;
@@ -532,21 +534,64 @@
                 margin-bottom: 55px;
             }
 
-            .fs-24 {
-                font-size: 16px;
-                line-height: 16px;
+            .m-ph-0 {
+                padding-left: 0;
+                padding-right: 0;
             }
 
-            .fs-27 {
-                font-size: 20px;
-                line-height: 26px;
+            .m-ph-15 {
+                padding-left: 15px;
+                padding-right: 15px;
+            }
+
+            .m-pv-25 {
+                padding-top: 25px;
+                padding-bottom: 25px;
+            }
+
+            .m-mt-25 {
+                margin-top: 25px;
+            }
+
+            .m-mb-25 {
+                margin-bottom: 25px;
+            }
+
+            .m-mb-50 {
+                margin-bottom: 50px;
+            }
+
+            .m-fs-12 {
+                font-size: 12px;
+            }
+
+            .m-fs-14 {
+                font-size: 14px;
+            }
+
+            .m-fs-16 {
+                font-size: 16px;
+            }
+
+            .m-fs-18 {
+                font-size: 18px;
+            }
+
+            .m-fs-24 {
+                font-size: 24px;
+            }
+
+            .m-fw-500 {
+                font-weight: 500;
+            }
+
+            .m-ta-center {
+                text-align: center;
             }
         }
     </style>
 </head>
 <body class="bg-color-white">
 <div id="root" class="root"></div>
-
 </body>
-
 </html>
