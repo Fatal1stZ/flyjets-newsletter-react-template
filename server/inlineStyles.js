@@ -14,10 +14,9 @@ fs.readFile(PATH, "utf8", function (err, data) {
   }).then(function (html) {
     const regex = /<body[^>]*>((.|[\n\r])*)<\/body>/im;
     const [body] = html.match(regex);
-    console.log(body);
     data.replace(regex, body);
     fs.writeFile(PATH, data.replace(regex, body), "utf8", res => {
-      console.log("finished", { res });
+      console.log("finished");
     });
   });
 });

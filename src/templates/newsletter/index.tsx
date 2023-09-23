@@ -16,35 +16,31 @@ const formatter = new Intl.NumberFormat('en-US', {
 function Newsletter() {
   return (<Fragment>
     {/* HEADER */}
-    {/*<div className={'non-mobile'}>*/}
-    {/*  <table className="header bg-color-black fs-12 uppercase color-white ">*/}
-    {/*    <tr>*/}
-    {/*      <td align={'left'}>*/}
-    {/*        <img*/}
-    {/*          className="img-logo"*/}
-    {/*          src="https://d3k81ch9hvuctc.cloudfront.net/company/SZYCZY/images/d1e06636-abe3-47fe-b588-4df414a33b7a.png"*/}
-    {/*          alt="logo"/>*/}
-    {/*      </td>*/}
-    {/*      <td align={'center'}>*/}
-    {/*        <span className="ff-roboto-condensed fs-24 fw-400">THE FLY REPORT</span>*/}
-    {/*      </td>*/}
-    {/*      <td align={'right'}>*/}
-    {/*        <span className="ff-roboto-condensed fs-16 fw-400">{format(parseISO('2023-09-18'), 'd MMMM, yyyy')}</span>*/}
-    {/*      </td>*/}
-    {/*    </tr>*/}
-    {/*  </table>*/}
-    {/*</div>*/}
+      <table className="header bg-color-black fs-12 uppercase color-white ">
+        <tr>
+          <td align={'left'} valign={'middle'}>
+            <img
+              className="img-logo"
+              src="https://d3k81ch9hvuctc.cloudfront.net/company/SZYCZY/images/d1e06636-abe3-47fe-b588-4df414a33b7a.png"
+              alt="logo"/>
+          </td>
+          <td align={'right'}>
+            <div className="ff-roboto-condensed fs-24 fw-400">THE FLY REPORT</div>
+            <div className="ff-roboto-condensed fs-16 fw-400">{format(parseISO('2023-09-18'), 'd MMMM, yyyy')}</div>
+          </td>
+        </tr>
+      </table>
     {/* MOBILE HEADER */}
-    <div className={'centered bg-color-black color-white ff-roboto-condensed ta-center pv-15 w-100'}>
-      <div className={'mb-25'}>
-        <img
-          className="img-logo"
-          src="https://d3k81ch9hvuctc.cloudfront.net/company/SZYCZY/images/d1e06636-abe3-47fe-b588-4df414a33b7a.png"
-          alt="logo"/>
-      </div>
-      <div className={'fs-24 fw-400'}>THE FLY REPORT</div>
-      <div className={'fs-16 fw-400'}>{format(parseISO('2023-09-18'), 'd MMMM, yyyy')}</div>
-    </div>
+    {/*<div className={'centered bg-color-black color-white ff-roboto-condensed ta-center pv-15 w-100'}>*/}
+    {/*  <div className={'mb-25'}>*/}
+    {/*    <img*/}
+    {/*      className="img-logo"*/}
+    {/*      src="https://d3k81ch9hvuctc.cloudfront.net/company/SZYCZY/images/d1e06636-abe3-47fe-b588-4df414a33b7a.png"*/}
+    {/*      alt="logo"/>*/}
+    {/*  </div>*/}
+    {/*  <div className={'fs-24 fw-400'}>THE FLY REPORT</div>*/}
+    {/*  <div className={'fs-16 fw-400'}>{format(parseISO('2023-09-18'), 'd MMMM, yyyy')}</div>*/}
+    {/*</div>*/}
 
     <div className={'ph-25 m-ph-15 mt-30 m-mt-25 mb-15 m-mb-25 fs-16 m-fs-18 fw-300 ta-center'}>After much ado, the
       first edition of our [weekly]
@@ -98,7 +94,9 @@ function Newsletter() {
           <div className={'fw-400 fs-13 color-dark-gray mb-15'}>{topArticle.subtitle}</div>
           <div className={'mb-10 fw-400 fs-12'}><a href={topArticle.link} className={'color-black'} target={'_blank'}
                                                    rel="noreferrer">Read article</a></div>
-          <img className="" src={topArticle.cover} alt={topArticle.title} width={'100%'}/>
+          <div className={'ta-center'}>
+            <img className="" src={topArticle.cover} alt={topArticle.title} width={'100%'} height={155}/>
+          </div>
         </div>
         {index !== newsletter.topArticles.length - 1 &&
           <div className={'bg-color-light-gray line mt-15 mb-15 non-mobile'}/>}
@@ -148,12 +146,12 @@ function Newsletter() {
     <table className="bottom">
       <tr>
         <td>
-          <span className="fs-24 fw-700 uppercase">Flyjets</span>
+          <div className="ta-center fs-24 fw-700 uppercase">Flyjets</div>
         </td>
       </tr>
       <tr>
         <td>
-          <span className="fs-16 fw-300 uppercase">FLY I Corporation</span>
+          <div className="ta-center fs-16 fw-300 uppercase">FLY I Corporation</div>
         </td>
       </tr>
     </table>
@@ -178,8 +176,8 @@ function Newsletter() {
     <table className="contacts mb-25">
       <tr>
         <td>
-            <span>Contact us: <a className="fw-700 color-black"
-                                 href="mailto:fly@flyjets.com">FLY@flyjets.com</a> </span>
+            <div className={'ta-center'}>Contact us: <a className="fw-700 color-black"
+                                 href="mailto:fly@flyjets.com">FLY@flyjets.com</a> </div>
         </td>
       </tr>
     </table>
