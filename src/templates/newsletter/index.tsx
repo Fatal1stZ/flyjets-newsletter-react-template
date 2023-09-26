@@ -16,31 +16,31 @@ const formatter = new Intl.NumberFormat('en-US', {
 function Newsletter() {
   return (<Fragment>
     {/* HEADER */}
-      <table className="header bg-color-black fs-12 uppercase color-white ">
-        <tr>
-          <td align={'left'} valign={'middle'}>
-            <img
-              className="img-logo"
-              src="https://d3k81ch9hvuctc.cloudfront.net/company/SZYCZY/images/d1e06636-abe3-47fe-b588-4df414a33b7a.png"
-              alt="logo"/>
-          </td>
-          <td align={'right'}>
-            <div className="ff-roboto-condensed fs-24 fw-400">THE FLY REPORT</div>
-            <div className="ff-roboto-condensed fs-16 fw-400">{format(parseISO('2023-09-18'), 'd MMMM, yyyy')}</div>
-          </td>
-        </tr>
-      </table>
+    {/*  <table className="header bg-color-black fs-12 uppercase color-white ">*/}
+    {/*    <tr>*/}
+    {/*      <td align={'left'} valign={'middle'}>*/}
+    {/*        <img*/}
+    {/*          className="img-logo"*/}
+    {/*          src="https://d3k81ch9hvuctc.cloudfront.net/company/SZYCZY/images/d1e06636-abe3-47fe-b588-4df414a33b7a.png"*/}
+    {/*          alt="logo"/>*/}
+    {/*      </td>*/}
+    {/*      <td align={'right'}>*/}
+    {/*        <div className="ff-roboto fs-24 fw-400">THE FLY REPORT</div>*/}
+    {/*        <div className="ff-roboto fs-16 fw-400">{format(parseISO('2023-09-18'), 'MMMM d, yyyy')}</div>*/}
+    {/*      </td>*/}
+    {/*    </tr>*/}
+    {/*  </table>*/}
     {/* MOBILE HEADER */}
-    {/*<div className={'centered bg-color-black color-white ff-roboto-condensed ta-center pv-15 w-100'}>*/}
-    {/*  <div className={'mb-25'}>*/}
-    {/*    <img*/}
-    {/*      className="img-logo"*/}
-    {/*      src="https://d3k81ch9hvuctc.cloudfront.net/company/SZYCZY/images/d1e06636-abe3-47fe-b588-4df414a33b7a.png"*/}
-    {/*      alt="logo"/>*/}
-    {/*  </div>*/}
-    {/*  <div className={'fs-24 fw-400'}>THE FLY REPORT</div>*/}
-    {/*  <div className={'fs-16 fw-400'}>{format(parseISO('2023-09-18'), 'd MMMM, yyyy')}</div>*/}
-    {/*</div>*/}
+    <div className={'centered bg-color-black color-white ff-roboto ta-center pv-15 w-100'}>
+      <div className={'mb-25'}>
+        <img
+          className="img-logo"
+          src="https://d3k81ch9hvuctc.cloudfront.net/company/SZYCZY/images/d1e06636-abe3-47fe-b588-4df414a33b7a.png"
+          alt="logo"/>
+      </div>
+      <div className={'fs-24 fw-400'}>THE FLY REPORT</div>
+      <div className={'fs-16 fw-400'}>{format(parseISO('2023-09-18'), 'MMMM d, yyyy')}</div>
+    </div>
 
     <div className={'ph-25 m-ph-15 mt-30 m-mt-25 mb-15 m-mb-25 fs-16 m-fs-18 fw-300 ta-center'}>After much ado, the
       first edition of our [weekly]
