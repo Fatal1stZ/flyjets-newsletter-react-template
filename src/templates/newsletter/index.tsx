@@ -67,26 +67,26 @@ function Newsletter() {
       <div className={'ph-25 mb-15 fs-18 fw-700 m-ta-center'}>TOP ARTICLES</div>
       {newsletter.topArticles.map((topArticle, index) => (<Fragment>
         {/* TOP ARTICLE */}
-        <div className={'ph-25 non-mobile'}>
-          <table className="p-0" cellPadding={0} cellSpacing={0}>
-            <tr>
-              <td width={'50%'} valign={'top'}>
-                <div className={'fw-400 fs-14 color-dark-gray mb-5'}>
-                  {format(parseISO(topArticle.published), 'MMM. d')}
-                </div>
-                <div className={'fw-600 fs-16 mb-5'}>{topArticle.title}</div>
-                <div className={'fw-400 fs-13 color-dark-gray mb-15'}>{topArticle.subtitle}</div>
-                <div className={'fw-400 fs-12'}><a href={topArticle.link} className={'color-black'} target={'_blank'}
-                                                   rel="noreferrer">Read article</a></div>
-              </td>
-              <td width={'50%'} align={'center'}>
-                <img className="ml-25" src={topArticle.cover} alt={topArticle.title} width={'267px'}/>
-              </td>
-            </tr>
-          </table>
-        </div>
+        {/*<div className={'ph-25 non-mobile'}>*/}
+        {/*  <table className="p-0" cellPadding={0} cellSpacing={0}>*/}
+        {/*    <tr>*/}
+        {/*      <td width={'50%'} valign={'top'}>*/}
+        {/*        <div className={'fw-400 fs-14 color-dark-gray mb-5'}>*/}
+        {/*          {format(parseISO(topArticle.published), 'MMM. d')}*/}
+        {/*        </div>*/}
+        {/*        <div className={'fw-600 fs-16 mb-5'}>{topArticle.title}</div>*/}
+        {/*        <div className={'fw-400 fs-13 color-dark-gray mb-15'}>{topArticle.subtitle}</div>*/}
+        {/*        <div className={'fw-400 fs-12'}><a href={topArticle.link} className={'color-black'} target={'_blank'}*/}
+        {/*                                           rel="noreferrer">Read article</a></div>*/}
+        {/*      </td>*/}
+        {/*      <td width={'50%'} align={'center'}>*/}
+        {/*        <img className="ml-25" src={topArticle.cover} alt={topArticle.title} width={'267px'}/>*/}
+        {/*      </td>*/}
+        {/*    </tr>*/}
+        {/*  </table>*/}
+        {/*</div>*/}
         {/* TOP ARTICLE MOBILE */}
-        <div className={'ph-15 mb-20 d-mobile'}>
+        <div className={'ph-15 mb-20'}>
           <div className={'fw-400 fs-14 color-dark-gray mb-5'}>
             {format(parseISO(topArticle.published), 'MMM. d')}
           </div>
@@ -95,7 +95,7 @@ function Newsletter() {
           <div className={'mb-10 fw-400 fs-12'}><a href={topArticle.link} className={'color-black'} target={'_blank'}
                                                    rel="noreferrer">Read article</a></div>
           <div className={'ta-center'}>
-            <img className="" src={topArticle.cover} alt={topArticle.title} width={'100%'} height={155}/>
+            <img className="" src={topArticle.cover} alt={topArticle.title} width={'100%'} />
           </div>
         </div>
         {index !== newsletter.topArticles.length - 1 &&
